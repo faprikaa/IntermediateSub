@@ -1,0 +1,6 @@
+com.a548bky4474.intermediatesub.test.app-androidTest-0 C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\build\generated\res\resValues\androidTest\debug
+com.a548bky4474.intermediatesub.test.app-mergeDebugAndroidTestResources-1 C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.a548bky4474.intermediatesub.test.app-mergeDebugAndroidTestResources-2 C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.a548bky4474.intermediatesub.test.app-merged_res-3 C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\build\intermediates\merged_res\debugAndroidTest
+com.a548bky4474.intermediatesub.test.app-annotation-experimental-1.3.0-4 D:\GradleCache\caches\transforms-3\8ef30cd8458785a6f5c6520a3378e97c\transformed\annotation-experimental-1.3.0\res
+com.a548bky4474.intermediatesub.test.app-core-1.5.0-5 D:\GradleCache\caches\transforms-3\ee985323bd50bae98bdc77920fdb7205\transformed\core-1.5.0\res

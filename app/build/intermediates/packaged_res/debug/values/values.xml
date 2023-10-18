@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="navy">#2D3D4F</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">IntermediateSub</string>
+    <string name="email">Email</string>
+    <string name="gambardicoding">GambarDicoding</string>
+    <string name="greeting">Halo %1$s,</string>
+    <string name="login">Login</string>
+    <string name="logout">Keluar</string>
+    <string name="message_login_page">Masukkan dulu datamu ya</string>
+    <string name="message_main_page">Selamat Belajar di Dicoding.</string>
+    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
+    <string name="name">Nama</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
+    <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
+    <string name="title_welcome_page">Selamat datang di Dicoding!</string>
+    <style name="Base.Theme.IntermediateSub" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.IntermediateSub" parent="Base.Theme.IntermediateSub"/>
+</resources>
