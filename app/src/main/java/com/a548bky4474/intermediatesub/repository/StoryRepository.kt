@@ -6,6 +6,7 @@ import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig
 import com.a548bky4474.intermediatesub.data.pref.UserPreference
 import com.a548bky4474.intermediatesub.data.response.LoginResponse
 import com.a548bky4474.intermediatesub.data.response.RegisterResponse
+import com.a548bky4474.intermediatesub.data.response.StoryResponse
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -37,6 +38,17 @@ class StoryRepository private constructor(
             } else {
                 val jsonInString = response.errorBody()?.string()
                 return@withContext Gson().fromJson<LoginResponse?>(jsonInString, LoginResponse::class.java)
+            }
+        }
+    }
+
+    suspend fun getStoriesRepo(token: String): StoryResponse {
+        return withContext(Dispatchers.IO) {
+            if (token.isEmpty()){
+                return@withContext StoryResponse()
+            }else {
+                return@withContext ApiConfig.getApiServiceWithToken(token).getStories().execute().body()!!
+
             }
         }
     }

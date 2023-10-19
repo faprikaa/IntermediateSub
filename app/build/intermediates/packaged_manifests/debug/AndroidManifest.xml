@@ -28,24 +28,29 @@
         android:testOnly="true"
         android:theme="@style/Theme.IntermediateSub" >
         <activity
+            android:name="com.a548bky4474.intermediatesub.view.add.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.a548bky4474.intermediatesub.view.detail.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name="com.a548bky4474.intermediatesub.view.register.RegisterActivity"
             android:exported="false" />
         <activity
             android:name="com.a548bky4474.intermediatesub.view.login.LoginActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.a548bky4474.intermediatesub.view.main.MainActivity"
-            android:exported="false" >
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <provider

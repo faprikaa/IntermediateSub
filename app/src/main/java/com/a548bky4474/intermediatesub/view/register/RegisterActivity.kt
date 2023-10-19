@@ -2,6 +2,7 @@ package com.a548bky4474.intermediatesub.view.register
 
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -32,6 +33,7 @@ class RegisterActivity : AppCompatActivity() {
             )
             viewModel.resultRegister.observe(this) {
                 var alertDialog: AlertDialog.Builder? = null
+                Log.i("ingfo",it.toString())
                 if (it.error == true) {
                     alertDialog = AlertDialog.Builder(this).apply {
                         setTitle("Oops !")

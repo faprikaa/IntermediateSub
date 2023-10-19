@@ -12,31 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntermediateSub">
         <activity
+            android:name=".view.add.AddActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.detail.DetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".view.welcome.WelcomeActivity"
             android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".view.register.RegisterActivity"
             android:exported="false" />
         <activity
             android:name=".view.login.LoginActivity"
-            android:exported="true">
-
-
-        </activity>
-
-
+            android:exported="true" />
         <activity
             android:name=".view.main.MainActivity"
-            android:exported="false">
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

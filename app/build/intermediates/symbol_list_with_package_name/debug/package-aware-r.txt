@@ -2909,6 +2909,8 @@ drawable abc_vector_test
 drawable appps
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_add_24
+drawable baseline_logout_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3105,6 +3107,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appBarLayout
 id arc
 id asConfigured
 id async
@@ -3124,9 +3127,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnCamera
+id btnGallery
 id btnLogin
-id btnLogout
 id btnRegister
+id btnUpload
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3212,6 +3217,7 @@ id enterAlwaysCollapsed
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fabAdd
 id fade
 id fill
 id fill_horizontal
@@ -3262,6 +3268,9 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivStory
+id ivStoryAdd
+id ivStoryDt
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3275,6 +3284,7 @@ id linear
 id listMode
 id list_item
 id loginButton
+id logout
 id m3_side_sheet
 id marquee
 id masked
@@ -3387,6 +3397,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvStory
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3482,11 +3493,11 @@ id text2
 id textEnd
 id textInputLayout
 id textInputLayout2
+id textInputLayout3
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3506,6 +3517,7 @@ id titleTextView
 id title_template
 id toggle
 id top
+id topAppBar
 id topPanel
 id touch_outside
 id transitionToEnd
@@ -3516,7 +3528,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvCreatedAt
+id tvDeskripsi
+id tvDeskripsiDt
 id tvLogin
+id tvNama
+id tvNamaDt
 id unchecked
 id uniform
 id unlabeled
@@ -3653,6 +3670,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_add
+layout activity_detail
 layout activity_login
 layout activity_main
 layout activity_register
@@ -3675,6 +3694,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_story
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3736,6 +3756,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description

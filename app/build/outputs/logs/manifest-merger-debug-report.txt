@@ -45,8 +45,8 @@ MERGED from [androidx.datastore:datastore-preferences:1.0.0] D:\GradleCache\cach
 MERGED from [androidx.datastore:datastore:1.0.0] D:\GradleCache\caches\transforms-3\41bf91ec78bb1d66451aeed077e4dcd5\transformed\datastore-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\a1058bcb4a20909f49bd958ffa59f513\transformed\room-runtime-2.5.2\AndroidManifest.xml:17:1-31:12
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\GradleCache\caches\transforms-3\72f586041714b10609c1731c3b37f387\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] D:\GradleCache\caches\transforms-3\b9f176b342dee6e081465f93e6622c68\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] D:\GradleCache\caches\transforms-3\b482e2878a8cd9bcb23ec0191dea3fad\transformed\gifdecoder-4.16.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] D:\GradleCache\caches\transforms-3\c3a4ef91c550b095beaf78e3b9ce31c3\transformed\exifinterface-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\c70309ac4172ba14e74f435e091b28c9\transformed\profileinstaller-1.3.0\AndroidManifest.xml:17:1-55:12
@@ -114,22 +114,24 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\GradleCa
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:13:9-53
-activity#com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:14:9-23:20
+activity#com.a548bky4474.intermediatesub.view.add.AddActivity
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:14:9-16:40
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:16:13-36
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:16:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:13-57
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:18:13-22:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:17-69
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:13-49
+activity#com.a548bky4474.intermediatesub.view.detail.DetailActivity
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:17:9-19:40
+	android:exported
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:21:17-77
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:18:13-55
+activity#com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:20:9-23:20
+	android:exported
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:22:13-36
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:21:27-74
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:21:13-57
 activity#com.a548bky4474.intermediatesub.view.register.RegisterActivity
 ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
@@ -137,17 +139,27 @@ ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\
 	android:name
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:25:13-59
 activity#com.a548bky4474.intermediatesub.view.login.LoginActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:27:9-32:20
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:27:9-29:39
 	android:exported
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:28:13-53
 activity#com.a548bky4474.intermediatesub.view.main.MainActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:35:9-39:20
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:30:9-38:20
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:37:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:32:13-36
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:36:13-51
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:31:13-51
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:33:13-37:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:34:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:36:27-74
 uses-sdk
 INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml
@@ -234,10 +246,10 @@ MERGED from [androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-
 MERGED from [androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\a1058bcb4a20909f49bd958ffa59f513\transformed\room-runtime-2.5.2\AndroidManifest.xml:21:5-44
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\GradleCache\caches\transforms-3\72f586041714b10609c1731c3b37f387\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [de.hdodenhof:circleimageview:3.1.0] D:\GradleCache\caches\transforms-3\72f586041714b10609c1731c3b37f387\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] D:\GradleCache\caches\transforms-3\b9f176b342dee6e081465f93e6622c68\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] D:\GradleCache\caches\transforms-3\b9f176b342dee6e081465f93e6622c68\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] D:\GradleCache\caches\transforms-3\e0b137afff3ac49bf7934795649c619e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] D:\GradleCache\caches\transforms-3\b482e2878a8cd9bcb23ec0191dea3fad\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [com.github.bumptech.glide:gifdecoder:4.16.0] D:\GradleCache\caches\transforms-3\b482e2878a8cd9bcb23ec0191dea3fad\transformed\gifdecoder-4.16.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.exifinterface:exifinterface:1.3.6] D:\GradleCache\caches\transforms-3\c3a4ef91c550b095beaf78e3b9ce31c3\transformed\exifinterface-1.3.6\AndroidManifest.xml:20:5-22:41

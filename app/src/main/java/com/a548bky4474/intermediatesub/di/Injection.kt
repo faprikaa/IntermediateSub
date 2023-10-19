@@ -10,4 +10,5 @@ object Injection {
         val pref = UserPreference.getInstance(context.dataStore)
         return StoryRepository.getInstance(pref)
     }
+
 }
