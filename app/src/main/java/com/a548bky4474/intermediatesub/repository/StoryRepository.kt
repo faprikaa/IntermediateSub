@@ -78,5 +78,4 @@ class StoryRepository private constructor(
         val ONRESPONSE_TAG = "Error@StoryRepository#OnResponse"
         val ONFAILURE_TAG = "Error@StoryRepository#OnFailure"
     }
-
 }
