@@ -45,6 +45,7 @@ id titleTextView
 id topAppBar
 id tvCreatedAt
 id tvDeskripsi
+id tvDeskripsiAdd
 id tvDeskripsiDt
 id tvLogin
 id tvNama
@@ -78,3 +79,4 @@ style Base.Theme.IntermediateSub
 style Theme.IntermediateSub
 xml backup_rules
 xml data_extraction_rules
+xml file_paths

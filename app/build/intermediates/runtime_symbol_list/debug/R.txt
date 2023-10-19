@@ -3529,6 +3529,7 @@ int id transition_transform 0x7f0801e9
 int id triangle 0x7f0801ea
 int id tvCreatedAt 0x7f08020d
 int id tvDeskripsi 0x7f080208
+int id tvDeskripsiAdd 0x7f080215
 int id tvDeskripsiDt 0x7f08020b
 int id tvLogin 0x7f0801eb
 int id tvNama 0x7f080209
@@ -7100,3 +7101,4 @@ int[] styleable include { 0x7f030130 }
 int styleable include_constraintSet 0
 int xml backup_rules 0x7f120000
 int xml data_extraction_rules 0x7f120001
+int xml file_paths 0x7f120002

@@ -40,6 +40,7 @@ class RegisterActivity : AppCompatActivity() {
                         setMessage(it.message)
                         setNegativeButton("Lanjut") { dialog, _ ->
                             dialog.cancel()
+                            dialog.dismiss()
                         }
                         create()
                     }
@@ -50,6 +51,7 @@ class RegisterActivity : AppCompatActivity() {
                         setMessage(it.message)
                         setNegativeButton("Lanjut") { dialog, _ ->
                             dialog.cancel()
+                            dialog.dismiss()
                         }
                         create()
                     }

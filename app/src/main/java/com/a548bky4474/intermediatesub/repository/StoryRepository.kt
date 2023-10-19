@@ -11,6 +11,11 @@ import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
+import okhttp3.MediaType.Companion.toMediaType
+import okhttp3.MultipartBody
+import okhttp3.RequestBody.Companion.asRequestBody
+import okhttp3.RequestBody.Companion.toRequestBody
+import java.io.File
 
 class StoryRepository private constructor(
     private val userPreference: UserPreference
@@ -44,9 +49,9 @@ class StoryRepository private constructor(
 
     suspend fun getStoriesRepo(token: String): StoryResponse {
         return withContext(Dispatchers.IO) {
-            if (token.isEmpty()){
+            if (token.isEmpty()) {
                 return@withContext StoryResponse()
-            }else {
+            } else {
                 return@withContext ApiConfig.getApiServiceWithToken(token).getStories().execute().body()!!
 
             }
@@ -63,6 +68,25 @@ class StoryRepository private constructor(
 
     suspend fun logout() {
         userPreference.logout()
+    }
+
+    suspend fun uploadImage(imageFile: File, description: String, token: String): RegisterResponse {
+        return withContext(Dispatchers.IO) {
+            val requestBody = description.toRequestBody("text/plain".toMediaType())
+            val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
+            val multipartBody = MultipartBody.Part.createFormData(
+                "photo",
+                imageFile.name,
+                requestImageFile
+            )
+            val response = ApiConfig.getApiServiceWithToken(token).uploadImage(multipartBody, requestBody).execute()
+            return@withContext if (response.isSuccessful) {
+                response.body()!!
+            } else {
+                val jsonInString = response.errorBody()?.string()
+                Gson().fromJson<RegisterResponse?>(jsonInString, RegisterResponse::class.java)
+            }
+        }
     }
 
     companion object {

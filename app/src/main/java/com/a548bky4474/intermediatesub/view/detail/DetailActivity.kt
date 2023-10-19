@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
 import com.a548bky4474.intermediatesub.view.StoryAdapter
+import com.a548bky4474.intermediatesub.view.dateFormatter
 import com.bumptech.glide.Glide
 import java.text.SimpleDateFormat
 import java.time.Instant
@@ -37,14 +38,4 @@ class DetailActivity : AppCompatActivity() {
         binding.tvCreatedAt.text = dateFormatter(detailStory.createdAt)
     }
 
-    private fun dateFormatter(date: String?): String? {
-        val inputDate = "2023-10-19T06:13:25.648Z"
-
-        val instant = Instant.parse(inputDate)
-        val zonedDateTime = ZonedDateTime.ofInstant(instant, ZoneId.of("Asia/Jakarta"))
-
-        val formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm")
-        val outputDate = formatter.format(zonedDateTime)
-        return outputDate
-    }
 }
