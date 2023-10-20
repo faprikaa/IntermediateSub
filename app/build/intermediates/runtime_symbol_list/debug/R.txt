@@ -2945,6 +2945,7 @@ int drawable ic_mtrl_checked_circle 0x7f07009a
 int drawable ic_mtrl_chip_checked_black 0x7f07009b
 int drawable ic_mtrl_chip_checked_circle 0x7f07009c
 int drawable ic_mtrl_chip_close_circle 0x7f07009d
+int drawable ic_place_holder 0x7f0700f1
 int drawable ic_search_black_24 0x7f07009e
 int drawable image_dicoding 0x7f07009f
 int drawable image_login 0x7f0700a0
@@ -3267,6 +3268,8 @@ int id invisible 0x7f0800e9
 int id inward 0x7f0800ea
 int id italic 0x7f0800eb
 int id item_touch_helper_previous_elevation 0x7f0800ec
+int id ivLogin 0x7f080216
+int id ivRegister 0x7f080219
 int id ivStory 0x7f080204
 int id ivStoryAdd 0x7f080214
 int id ivStoryDt 0x7f08020a
@@ -3377,6 +3380,10 @@ int id parent_matrix 0x7f080153
 int id password_toggle 0x7f080154
 int id path 0x7f080155
 int id pathRelative 0x7f080156
+int id pbAdd 0x7f08021e
+int id pbLogin 0x7f08021c
+int id pbMain 0x7f08021f
+int id pbRegister 0x7f08021d
 int id peekHeight 0x7f080157
 int id percent 0x7f080158
 int id pin 0x7f080159
@@ -3490,8 +3497,6 @@ int id tag_window_insets_animation_callback 0x7f0801c3
 int id text 0x7f0801c4
 int id text2 0x7f0801c5
 int id textEnd 0x7f0801c6
-int id textInputLayout 0x7f0801c7
-int id textInputLayout2 0x7f0801c8
 int id textInputLayout3 0x7f080213
 int id textSpacerNoButtons 0x7f0801c9
 int id textSpacerNoTitle 0x7f0801ca
@@ -3509,6 +3514,10 @@ int id textinput_suffix_text 0x7f0801d6
 int id tiEmail 0x7f0801d7
 int id tiName 0x7f0801d8
 int id tiPassword 0x7f0801d9
+int id tilEmail 0x7f080217
+int id tilNameReg 0x7f08021a
+int id tilPassReg 0x7f08021b
+int id tilPassword 0x7f080218
 int id time 0x7f0801da
 int id title 0x7f0801db
 int id titleDividerNoCustom 0x7f0801dc

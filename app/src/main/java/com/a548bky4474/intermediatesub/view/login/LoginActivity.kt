@@ -1,8 +1,11 @@
 package com.a548bky4474.intermediatesub.view.login
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -27,53 +30,52 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupView()
-
+        changePBVisibility(false)
         binding.btnLogin.setOnClickListener {
+            changePBVisibility(true)
+
             val email = binding.tiEmail.text.toString()
             val password = binding.tiPassword.text.toString()
             viewModel.loginUser(email, password)
             viewModel.resultLogin.observe(this) {
+                changePBVisibility(false)
                 if (it.error == true){
                     alertDialog = AlertDialog.Builder(this).apply {
                         setTitle("Oops !")
                         setMessage(it.message)
-                        setNegativeButton("Lanjut") { dialog, _ ->
+                        setNegativeButton("Oke") { dialog, _ ->
                             dialog.dismiss()
+                            dialog.cancel()
+                            alertDialog = null
                         }
                     }
                     alertDialog?.create()
                     alertDialog?.show()
                 } else {
                     alertDialog = AlertDialog.Builder(this).apply {
-                        setTitle("Yeah!")
-                        setMessage("Anda berhasil login. Sudah tidak sabar untuk belajar ya?")
+                        setTitle("Yippi !")
+                        setMessage("Anda berhasil login. Lanjut ke halaman lanjutnya ?")
                         setPositiveButton("Lanjut") { dialog, _ ->
                             dialog.dismiss()
+                            dialog.cancel()
+                            alertDialog = null
                             val intent = Intent(this@LoginActivity, MainActivity::class.java)
                             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                             startActivity(intent)
                             finish()
-
                         }
                     }
                     alertDialog?.create()
                     alertDialog?.show()
                     viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
                 }
-
             }
-//            viewModel.saveSession(UserModel(email, "sample_token"))
-
         }
         binding.btnRegister.setOnClickListener{
             var i = Intent(this, RegisterActivity::class.java)
             startActivity(i)
         }
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        alertDialog = null
+        playAnimation()
     }
 
     private fun setupView() {
@@ -89,5 +91,45 @@ class LoginActivity : AppCompatActivity() {
         supportActionBar?.hide()
     }
 
+    private fun changePBVisibility(active: Boolean){
+        binding.pbLogin.visibility = if (active) View.VISIBLE else View.GONE
+    }
 
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.ivLogin, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 6000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+
+        val title =
+            ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA, 1f).setDuration(150)
+        val emailTextInput =
+            ObjectAnimator.ofFloat(binding.tiEmail, View.ALPHA, 1f).setDuration(150)
+        val emailTextInputLayout =
+            ObjectAnimator.ofFloat(binding.tilEmail, View.ALPHA, 1f).setDuration(150)
+        val passTextInput =
+            ObjectAnimator.ofFloat(binding.tiPassword, View.ALPHA, 1f).setDuration(150)
+        val passTextInputLayout =
+            ObjectAnimator.ofFloat(binding.tilPassword, View.ALPHA, 1f).setDuration(150)
+        val btnLogin =
+            ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA, 1f).setDuration(150)
+        val btnRegister =
+            ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA, 1f).setDuration(150)
+//        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
+
+
+        AnimatorSet().apply {
+            playSequentially(
+                title,
+                emailTextInput,
+                emailTextInputLayout,
+                passTextInput,
+                passTextInputLayout,
+                btnLogin,
+                btnRegister,
+            )
+            startDelay = 150
+        }.start()
+    }
 }

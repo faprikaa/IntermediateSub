@@ -6,12 +6,15 @@ import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -34,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO)
 
         viewModel.getSession().observe(this) { user ->
             Log.i("ingfo", user.toString())
@@ -41,9 +45,11 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             } else {
+                binding.pbMain.visibility = View.VISIBLE
                 setupView()
                 setupAction()
                 setupRecyclerView()
+                binding.pbMain.visibility = View.GONE
             }
         }
 
@@ -81,8 +87,8 @@ class MainActivity : AppCompatActivity() {
             binding.rvStory.adapter = adapter
             val layoutManager = LinearLayoutManager(this)
             binding.rvStory.layoutManager = layoutManager
-            val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
-            binding.rvStory.addItemDecoration(itemDecoration)
+//            val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
+//            binding.rvStory.addItemDecoration(itemDecoration)
         }
     }
 

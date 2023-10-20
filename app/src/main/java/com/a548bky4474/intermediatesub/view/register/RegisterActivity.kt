@@ -1,8 +1,11 @@
 package com.a548bky4474.intermediatesub.view.register
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.view.WindowInsets
 import android.view.WindowManager
 import androidx.activity.viewModels
@@ -24,14 +27,18 @@ class RegisterActivity : AppCompatActivity() {
 
         setupView()
         setupAction()
+        playAnimation()
 
+        binding.pbRegister.visibility = View.GONE
         binding.btnRegister.setOnClickListener {
+            binding.pbRegister.visibility = View.VISIBLE
             viewModel.registerUser(
                 binding.tiName.text.toString(),
                 binding.tiEmail.text.toString(),
                 binding.tiPassword.text.toString()
             )
             viewModel.resultRegister.observe(this) {
+                binding.pbRegister.visibility = View.GONE
                 var alertDialog: AlertDialog.Builder? = null
                 Log.i("ingfo",it.toString())
                 if (it.error == true) {
@@ -89,4 +96,49 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun playAnimation() {
+        ObjectAnimator.ofFloat(binding.ivRegister, View.TRANSLATION_X, -30f, 30f).apply {
+            duration = 6000
+            repeatCount = ObjectAnimator.INFINITE
+            repeatMode = ObjectAnimator.REVERSE
+        }.start()
+
+        val title =
+            ObjectAnimator.ofFloat(binding.tvLogin, View.ALPHA, 1f).setDuration(150)
+        val emailTextInput =
+            ObjectAnimator.ofFloat(binding.tiEmail, View.ALPHA, 1f).setDuration(150)
+        val emailTextInputLayout =
+            ObjectAnimator.ofFloat(binding.tilEmail, View.ALPHA, 1f).setDuration(150)
+        val passTextInput =
+            ObjectAnimator.ofFloat(binding.tiPassword, View.ALPHA, 1f).setDuration(150)
+        val passTextInputLayout =
+            ObjectAnimator.ofFloat(binding.tilPassReg, View.ALPHA, 1f).setDuration(150)
+        val nameTextInput =
+            ObjectAnimator.ofFloat(binding.tiName, View.ALPHA, 1f).setDuration(150)
+        val nameTextInputLayout =
+            ObjectAnimator.ofFloat(binding.tilNameReg, View.ALPHA, 1f).setDuration(150)
+        val btnLogin =
+            ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA, 1f).setDuration(150)
+        val btnRegister =
+            ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA, 1f).setDuration(150)
+//        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
+
+
+        AnimatorSet().apply {
+            playSequentially(
+                title,
+                nameTextInput,
+                nameTextInputLayout,
+                emailTextInput,
+                emailTextInputLayout,
+                passTextInput,
+                passTextInputLayout,
+                btnLogin,
+                btnRegister,
+            )
+            startDelay = 150
+        }.start()
+    }
+
 }

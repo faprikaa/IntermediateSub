@@ -5,6 +5,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,10 +32,10 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final Button btnRegister;
 
   @NonNull
-  public final TextInputLayout textInputLayout;
+  public final ImageView ivRegister;
 
   @NonNull
-  public final TextInputLayout textInputLayout2;
+  public final ProgressBar pbRegister;
 
   @NonNull
   public final TextInputEditText tiEmail;
@@ -45,21 +47,34 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final PasswordInputText tiPassword;
 
   @NonNull
+  public final TextInputLayout tilEmail;
+
+  @NonNull
+  public final TextInputLayout tilNameReg;
+
+  @NonNull
+  public final TextInputLayout tilPassReg;
+
+  @NonNull
   public final TextView tvLogin;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogin,
-      @NonNull Button btnRegister, @NonNull TextInputLayout textInputLayout,
-      @NonNull TextInputLayout textInputLayout2, @NonNull TextInputEditText tiEmail,
-      @NonNull TextInputEditText tiName, @NonNull PasswordInputText tiPassword,
+      @NonNull Button btnRegister, @NonNull ImageView ivRegister, @NonNull ProgressBar pbRegister,
+      @NonNull TextInputEditText tiEmail, @NonNull TextInputEditText tiName,
+      @NonNull PasswordInputText tiPassword, @NonNull TextInputLayout tilEmail,
+      @NonNull TextInputLayout tilNameReg, @NonNull TextInputLayout tilPassReg,
       @NonNull TextView tvLogin) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.btnRegister = btnRegister;
-    this.textInputLayout = textInputLayout;
-    this.textInputLayout2 = textInputLayout2;
+    this.ivRegister = ivRegister;
+    this.pbRegister = pbRegister;
     this.tiEmail = tiEmail;
     this.tiName = tiName;
     this.tiPassword = tiPassword;
+    this.tilEmail = tilEmail;
+    this.tilNameReg = tilNameReg;
+    this.tilPassReg = tilPassReg;
     this.tvLogin = tvLogin;
   }
 
@@ -102,15 +117,15 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.textInputLayout;
-      TextInputLayout textInputLayout = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout == null) {
+      id = R.id.ivRegister;
+      ImageView ivRegister = ViewBindings.findChildViewById(rootView, id);
+      if (ivRegister == null) {
         break missingId;
       }
 
-      id = R.id.textInputLayout2;
-      TextInputLayout textInputLayout2 = ViewBindings.findChildViewById(rootView, id);
-      if (textInputLayout2 == null) {
+      id = R.id.pbRegister;
+      ProgressBar pbRegister = ViewBindings.findChildViewById(rootView, id);
+      if (pbRegister == null) {
         break missingId;
       }
 
@@ -132,6 +147,24 @@ public final class ActivityRegisterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tilEmail;
+      TextInputLayout tilEmail = ViewBindings.findChildViewById(rootView, id);
+      if (tilEmail == null) {
+        break missingId;
+      }
+
+      id = R.id.tilNameReg;
+      TextInputLayout tilNameReg = ViewBindings.findChildViewById(rootView, id);
+      if (tilNameReg == null) {
+        break missingId;
+      }
+
+      id = R.id.tilPassReg;
+      TextInputLayout tilPassReg = ViewBindings.findChildViewById(rootView, id);
+      if (tilPassReg == null) {
+        break missingId;
+      }
+
       id = R.id.tvLogin;
       TextView tvLogin = ViewBindings.findChildViewById(rootView, id);
       if (tvLogin == null) {
@@ -139,7 +172,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       return new ActivityRegisterBinding((ConstraintLayout) rootView, btnLogin, btnRegister,
-          textInputLayout, textInputLayout2, tiEmail, tiName, tiPassword, tvLogin);
+          ivRegister, pbRegister, tiEmail, tiName, tiPassword, tilEmail, tilNameReg, tilPassReg,
+          tvLogin);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -4,6 +4,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
@@ -28,10 +29,14 @@ class AddActivity : AppCompatActivity() {
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.pbAdd.visibility= View.GONE
         binding.btnGallery.setOnClickListener {  startGallery()}
         binding.btnCamera.setOnClickListener {  startCamera()}
-        binding.btnUpload.setOnClickListener { uploadImage() }
-
+        binding.btnUpload.setOnClickListener {
+            binding.pbAdd.visibility= View.VISIBLE
+            uploadImage()
+            binding.pbAdd.visibility= View.GONE
+        }
     }
 
     private fun startGallery() {

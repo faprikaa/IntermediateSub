@@ -2946,6 +2946,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_place_holder
 drawable ic_search_black_24
 drawable image_dicoding
 drawable image_login
@@ -3268,6 +3269,8 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
+id ivLogin
+id ivRegister
 id ivStory
 id ivStoryAdd
 id ivStoryDt
@@ -3378,6 +3381,10 @@ id parent_matrix
 id password_toggle
 id path
 id pathRelative
+id pbAdd
+id pbLogin
+id pbMain
+id pbRegister
 id peekHeight
 id percent
 id pin
@@ -3491,8 +3498,6 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
-id textInputLayout
-id textInputLayout2
 id textInputLayout3
 id textSpacerNoButtons
 id textSpacerNoTitle
@@ -3510,6 +3515,10 @@ id textinput_suffix_text
 id tiEmail
 id tiName
 id tiPassword
+id tilEmail
+id tilNameReg
+id tilPassReg
+id tilPassword
 id time
 id title
 id titleDividerNoCustom

@@ -40,12 +40,12 @@
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\layout_activity_login.xml.flat",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_login.xml"
-    },
-    {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\drawable_image_dicoding.webp.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\image_dicoding.webp"
+    },
+    {
+        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\layout_activity_login.xml.flat",
+        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_login.xml"
     },
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\menu_main_menu.xml.flat",
@@ -66,6 +66,10 @@
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\layout_activity_welcome.xml.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\xml_file_paths.xml.flat",
+        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\xml\\file_paths.xml"
     },
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
@@ -126,6 +130,14 @@
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\drawable_image_signup.webp.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\image_signup.webp"
+    },
+    {
+        "merged": "com.a548bky4474.intermediatesub.app-merged_res-4:/drawable_ic_place_holder.xml.flat",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/drawable/ic_place_holder.xml"
+    },
+    {
+        "merged": "com.a548bky4474.intermediatesub.app-merged_res-4:/layout_activity_main.xml.flat",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_main.xml"
     },
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\layout_item_story.xml.flat",

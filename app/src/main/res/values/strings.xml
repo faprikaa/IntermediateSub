@@ -3,8 +3,8 @@
     <string name="login">Login</string>
     <string name="gambardicoding">GambarDicoding</string>
     <string name="register">Register</string>
-    <string name="message_welcome_page">Mau belajar Android, iOS, Machine Learning, Cloud, Front-End, Back-End, dan bidang IT lainnya? Di Dicoding aja!</string>
-    <string name="title_welcome_page">Selamat datang di Dicoding!</string>
+    <string name="message_welcome_page">Anda bisa membagikan foto anda kepada orang lain dan melihat foto yang dibagikan orang lain.</string>
+    <string name="title_welcome_page">Selamat datang di Dicoding Storyapp !</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="email">Email</string>
     <string name="password">Password</string>

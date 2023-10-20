@@ -30,5 +30,9 @@
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\item_story.xml",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\item_story.xml"
+    },
+    {
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_main.xml"
     }
 ]
