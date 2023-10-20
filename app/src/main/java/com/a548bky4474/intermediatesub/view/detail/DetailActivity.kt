@@ -8,11 +8,6 @@ import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
 import com.a548bky4474.intermediatesub.view.StoryAdapter
 import com.a548bky4474.intermediatesub.view.dateFormatter
 import com.bumptech.glide.Glide
-import java.text.SimpleDateFormat
-import java.time.Instant
-import java.time.ZoneId
-import java.time.ZonedDateTime
-import java.time.format.DateTimeFormatter
 
 class DetailActivity : AppCompatActivity() {
     private lateinit var detailStory: ListStoryItem

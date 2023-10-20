@@ -1,5 +1,6 @@
 package com.a548bky4474.intermediatesub.view.add
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,6 +16,7 @@ import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
 import com.a548bky4474.intermediatesub.view.ViewModelFactory
 import com.a548bky4474.intermediatesub.view.getImageUri
 import com.a548bky4474.intermediatesub.view.login.LoginViewModel
+import com.a548bky4474.intermediatesub.view.main.MainActivity
 import com.a548bky4474.intermediatesub.view.reduceFileImage
 import com.a548bky4474.intermediatesub.view.uriToFile
 
@@ -24,24 +26,26 @@ class AddActivity : AppCompatActivity() {
     private val viewModel by viewModels<AddViewModel> {
         ViewModelFactory.getInstance(this)
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityAddBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.pbAdd.visibility= View.GONE
-        binding.btnGallery.setOnClickListener {  startGallery()}
-        binding.btnCamera.setOnClickListener {  startCamera()}
+        binding.pbAdd.visibility = View.GONE
+        binding.btnGallery.setOnClickListener { startGallery() }
+        binding.btnCamera.setOnClickListener { startCamera() }
         binding.btnUpload.setOnClickListener {
-            binding.pbAdd.visibility= View.VISIBLE
+            binding.pbAdd.visibility = View.VISIBLE
             uploadImage()
-            binding.pbAdd.visibility= View.GONE
+            binding.pbAdd.visibility = View.GONE
         }
     }
 
     private fun startGallery() {
         launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
     }
+
     private fun startCamera() {
         currentImageUri = getImageUri(this)
         launcherIntentCamera.launch(currentImageUri)
@@ -64,6 +68,7 @@ class AddActivity : AppCompatActivity() {
             Log.d("Photo Picker", "No media selected")
         }
     }
+
     private fun showImage() {
         currentImageUri?.let {
             Log.d("Image URI", "showImage: $it")
@@ -95,8 +100,8 @@ class AddActivity : AppCompatActivity() {
                         setTitle("Yippi !")
                         setMessage(result.message)
                         setNegativeButton("Lanjut") { dialog, _ ->
-                            dialog.cancel()
-                            dialog.dismiss()
+                            val i = Intent(this@AddActivity, MainActivity::class.java)
+                            startActivity(i)
                         }
                         create()
                     }
