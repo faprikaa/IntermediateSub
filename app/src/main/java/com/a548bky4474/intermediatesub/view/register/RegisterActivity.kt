@@ -2,6 +2,7 @@ package com.a548bky4474.intermediatesub.view.register
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.util.Log
@@ -13,6 +14,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.a548bky4474.intermediatesub.databinding.ActivityRegisterBinding
 import com.a548bky4474.intermediatesub.view.ViewModelFactory
+import com.a548bky4474.intermediatesub.view.login.LoginActivity
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding
@@ -95,6 +97,10 @@ class RegisterActivity : AppCompatActivity() {
                 show()
             }
         }
+        binding.btnLogin.setOnClickListener {
+            val i = Intent(this, LoginActivity::class.java)
+            startActivity(i)
+        }
     }
 
     private fun playAnimation() {
@@ -122,8 +128,6 @@ class RegisterActivity : AppCompatActivity() {
             ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA, 1f).setDuration(150)
         val btnRegister =
             ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA, 1f).setDuration(150)
-//        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
-
 
         AnimatorSet().apply {
             playSequentially(
