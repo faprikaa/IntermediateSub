@@ -1,6 +1,5 @@
 package com.a548bky4474.intermediatesub.repository
 
-import android.util.Log
 import com.a548bky4474.intermediatesub.data.pref.UserModel
 import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig
 import com.a548bky4474.intermediatesub.data.pref.UserPreference
@@ -25,16 +24,13 @@ class StoryRepository private constructor(
         return withContext(Dispatchers.IO) {
             val response = ApiConfig.getApiService().register(name, email, password).execute()
             if (response.isSuccessful) {
-                Log.i("ingfo", response.message())
                 return@withContext response.body()!!
             } else {
                 val jsonInString = response.errorBody()?.string()
-                val errorResponse = Gson().fromJson(jsonInString, RegisterResponse::class.java)
-                return@withContext errorResponse
+                return@withContext Gson().fromJson<RegisterResponse?>(jsonInString, RegisterResponse::class.java)
             }
         }
     }
-
     suspend fun loginUser(email: String, password: String): LoginResponse {
         return withContext(Dispatchers.IO) {
             val response = ApiConfig.getApiService().login(email, password).execute()

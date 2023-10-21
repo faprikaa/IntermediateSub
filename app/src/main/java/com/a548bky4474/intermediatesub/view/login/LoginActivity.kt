@@ -31,45 +31,47 @@ class LoginActivity : AppCompatActivity() {
 
         setupView()
         changePBVisibility(false)
+
+        val email = binding.tiEmail.text.toString()
+        val password = binding.tiPassword.text.toString()
+
+        viewModel.resultLogin.observe(this) {
+
+            if (it.error == true){
+                alertDialog = AlertDialog.Builder(this).apply {
+                    setTitle("Oops !")
+                    setMessage(it.message)
+                    setNegativeButton("Oke") { dialog, _ ->
+                        dialog.dismiss()
+                        dialog.cancel()
+                        alertDialog = null
+                    }
+                }
+                alertDialog?.create()
+                alertDialog?.show()
+            } else {
+                alertDialog = AlertDialog.Builder(this).apply {
+                    setTitle("Yippi !")
+                    setMessage("Anda berhasil login. Lanjut ke halaman lanjutnya ?")
+                    setPositiveButton("Lanjut") { dialog, _ ->
+                        dialog.dismiss()
+                        dialog.cancel()
+                        alertDialog = null
+                        val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                        startActivity(intent)
+                        finish()
+                    }
+                }
+                alertDialog?.create()
+                alertDialog?.show()
+            }
+            viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
+        }
         binding.btnLogin.setOnClickListener {
             changePBVisibility(true)
-
-            val email = binding.tiEmail.text.toString()
-            val password = binding.tiPassword.text.toString()
             viewModel.loginUser(email, password)
-            viewModel.resultLogin.observe(this) {
-                changePBVisibility(false)
-                if (it.error == true){
-                    alertDialog = AlertDialog.Builder(this).apply {
-                        setTitle("Oops !")
-                        setMessage(it.message)
-                        setNegativeButton("Oke") { dialog, _ ->
-                            dialog.dismiss()
-                            dialog.cancel()
-                            alertDialog = null
-                        }
-                    }
-                    alertDialog?.create()
-                    alertDialog?.show()
-                } else {
-                    alertDialog = AlertDialog.Builder(this).apply {
-                        setTitle("Yippi !")
-                        setMessage("Anda berhasil login. Lanjut ke halaman lanjutnya ?")
-                        setPositiveButton("Lanjut") { dialog, _ ->
-                            dialog.dismiss()
-                            dialog.cancel()
-                            alertDialog = null
-                            val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
-                            startActivity(intent)
-                            finish()
-                        }
-                    }
-                    alertDialog?.create()
-                    alertDialog?.show()
-                    viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
-                }
-            }
+            changePBVisibility(false)
         }
         binding.btnRegister.setOnClickListener{
             var i = Intent(this, RegisterActivity::class.java)

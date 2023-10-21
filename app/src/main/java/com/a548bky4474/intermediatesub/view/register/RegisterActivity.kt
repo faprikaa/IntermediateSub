@@ -31,6 +31,35 @@ class RegisterActivity : AppCompatActivity() {
         setupAction()
         playAnimation()
 
+        viewModel.resultRegister.observe(this) {
+            binding.pbRegister.visibility = View.GONE
+            var alertDialog: AlertDialog.Builder? = null
+            Log.i("ingfo",it.toString())
+            if (it.error == true) {
+                alertDialog = AlertDialog.Builder(this).apply {
+                    setTitle("Oops !")
+                    setMessage(it.message)
+                    setNegativeButton("Lanjut") { dialog, _ ->
+                        dialog.cancel()
+                        dialog.dismiss()
+                    }
+                    create()
+                }
+                alertDialog.show()
+            } else {
+                alertDialog = AlertDialog.Builder(this).apply {
+                    setTitle("Yippi !")
+                    setMessage(it.message)
+                    setNegativeButton("Lanjut") { dialog, _ ->
+                        dialog.cancel()
+                        dialog.dismiss()
+                    }
+                    create()
+                }
+                alertDialog.show()
+            }
+        }
+
         binding.pbRegister.visibility = View.GONE
         binding.btnRegister.setOnClickListener {
             binding.pbRegister.visibility = View.VISIBLE
@@ -39,34 +68,6 @@ class RegisterActivity : AppCompatActivity() {
                 binding.tiEmail.text.toString(),
                 binding.tiPassword.text.toString()
             )
-            viewModel.resultRegister.observe(this) {
-                binding.pbRegister.visibility = View.GONE
-                var alertDialog: AlertDialog.Builder? = null
-                Log.i("ingfo",it.toString())
-                if (it.error == true) {
-                    alertDialog = AlertDialog.Builder(this).apply {
-                        setTitle("Oops !")
-                        setMessage(it.message)
-                        setNegativeButton("Lanjut") { dialog, _ ->
-                            dialog.cancel()
-                            dialog.dismiss()
-                        }
-                        create()
-                    }
-                    alertDialog.show()
-                } else {
-                    alertDialog = AlertDialog.Builder(this).apply {
-                        setTitle("Yippi !")
-                        setMessage(it.message)
-                        setNegativeButton("Lanjut") { dialog, _ ->
-                            dialog.cancel()
-                            dialog.dismiss()
-                        }
-                        create()
-                    }
-                    alertDialog.show()
-                }
-            }
         }
     }
 
