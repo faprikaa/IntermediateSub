@@ -32,22 +32,22 @@ class LoginActivity : AppCompatActivity() {
         setupView()
         changePBVisibility(false)
 
-        val email = binding.tiEmail.text.toString()
-        val password = binding.tiPassword.text.toString()
+        var email = binding.tiEmail.text.toString()
+        var password = binding.tiPassword.text.toString()
 
         viewModel.resultLogin.observe(this) {
-
             if (it.error == true){
                 alertDialog = AlertDialog.Builder(this).apply {
                     setTitle("Oops !")
                     setMessage(it.message)
                     setNegativeButton("Oke") { dialog, _ ->
+                        viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
                         dialog.dismiss()
                         dialog.cancel()
-                        alertDialog = null
                     }
                 }
                 alertDialog?.create()
+                changePBVisibility(false)
                 alertDialog?.show()
             } else {
                 alertDialog = AlertDialog.Builder(this).apply {
@@ -56,7 +56,6 @@ class LoginActivity : AppCompatActivity() {
                     setPositiveButton("Lanjut") { dialog, _ ->
                         dialog.dismiss()
                         dialog.cancel()
-                        alertDialog = null
                         val intent = Intent(this@LoginActivity, MainActivity::class.java)
                         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                         startActivity(intent)
@@ -64,14 +63,15 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
                 alertDialog?.create()
+                changePBVisibility(false)
                 alertDialog?.show()
             }
-            viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
         }
         binding.btnLogin.setOnClickListener {
             changePBVisibility(true)
+            email = binding.tiEmail.text.toString()
+            password = binding.tiPassword.text.toString()
             viewModel.loginUser(email, password)
-            changePBVisibility(false)
         }
         binding.btnRegister.setOnClickListener{
             var i = Intent(this, RegisterActivity::class.java)
