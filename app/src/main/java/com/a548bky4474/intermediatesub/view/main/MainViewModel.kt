@@ -36,6 +36,13 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
             }
         }
     }
+    fun getStoriesWithLocation() {
+        viewModelScope.launch {
+            repository.getSession().collect {
+                _stories.value = repository.getStoriesWithLocationRepo(it.token)
+            }
+        }
+    }
 
 
 }

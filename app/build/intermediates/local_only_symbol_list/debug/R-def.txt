@@ -1,11 +1,13 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color fefefe
 color navy
 color white
 drawable appps
 drawable baseline_add_24
 drawable baseline_logout_24
+drawable baseline_map_24
 drawable ic_baseline_email_24
 drawable ic_baseline_lock_24
 drawable ic_baseline_person_24
@@ -16,6 +18,8 @@ drawable image_dicoding
 drawable image_login
 drawable image_signup
 drawable image_welcome
+drawable logout_fill0_wght400_grad0_opsz24
+drawable map_fill0_wght400_grad0_opsz24
 drawable rounded_edittext
 id appBarLayout
 id background
@@ -36,6 +40,8 @@ id ivStoryAdd
 id ivStoryDt
 id loginButton
 id logout
+id map
+id mapIcon
 id pbAdd
 id pbLogin
 id pbMain
@@ -63,16 +69,20 @@ layout activity_add
 layout activity_detail
 layout activity_login
 layout activity_main
+layout activity_maps
 layout activity_register
 layout activity_welcome
 layout item_story
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw map_style
 string app_name
 string email
+string gallery
 string gambardicoding
 string greeting
+string image_fo_story
 string login
 string logout
 string message_login_page
@@ -81,6 +91,7 @@ string message_welcome_page
 string name
 string password
 string register
+string title_activity_maps
 string title_login_page
 string title_signup_page
 string title_welcome_page

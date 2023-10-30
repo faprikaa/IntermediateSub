@@ -1,42 +1,34 @@
 [
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_welcome.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_welcome.xml"
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_maps.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_maps.xml"
     },
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_detail.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_detail.xml"
-    },
-    {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_login.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_login.xml"
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/item_story.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/item_story.xml"
     },
     {
         "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_add.xml",
         "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_add.xml"
     },
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_add.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_add.xml"
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_welcome.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_detail.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_detail.xml"
     },
     {
         "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_login.xml",
         "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_login.xml"
     },
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_main.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_main.xml"
-    },
-    {
         "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_register.xml",
         "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_register.xml"
     },
     {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\activity_register.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-3:\\layout\\item_story.xml",
-        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\item_story.xml"
+        "merged": "com.a548bky4474.intermediatesub.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_main.xml"
     }
 ]

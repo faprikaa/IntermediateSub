@@ -53,6 +53,16 @@ class StoryRepository private constructor(
             }
         }
     }
+    suspend fun getStoriesWithLocationRepo(token: String): StoryResponse {
+        return withContext(Dispatchers.IO) {
+            if (token.isEmpty()) {
+                return@withContext StoryResponse()
+            } else {
+                return@withContext ApiConfig.getApiServiceWithToken(token).getStoriesWithLocation().execute().body()!!
+
+            }
+        }
+    }
 
     suspend fun saveSession(user: UserModel) {
         userPreference.saveSession(user)

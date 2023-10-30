@@ -18,8 +18,10 @@ import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.a548bky4474.intermediatesub.MapsActivity
 import com.a548bky4474.intermediatesub.R
 import com.a548bky4474.intermediatesub.data.response.ListStoryItem
+import com.a548bky4474.intermediatesub.data.response.StoryResponse
 import com.a548bky4474.intermediatesub.databinding.ActivityMainBinding
 import com.a548bky4474.intermediatesub.view.StoryAdapter
 import com.a548bky4474.intermediatesub.view.ViewModelFactory
@@ -32,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         ViewModelFactory.getInstance(this)
     }
     private lateinit var binding: ActivityMainBinding
+    private lateinit var dataStoryWithLocation: StoryResponse
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -83,6 +86,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getStories()
         viewModel.stories.observe(this) { stories ->
             val adapter = StoryAdapter()
+            dataStoryWithLocation = stories
             adapter.submitList(stories.listStory)
             binding.rvStory.adapter = adapter
             val layoutManager = LinearLayoutManager(this)
@@ -116,6 +120,13 @@ class MainActivity : AppCompatActivity() {
             when (menuItem.itemId) {
                 R.id.logout -> {
                     viewModel.logout()
+                    finish()
+                    true
+                }
+                R.id.mapIcon -> {
+                    val intent = Intent(this, MapsActivity::class.java)
+                    intent.putExtra("mapsData", dataStoryWithLocation)
+                    startActivity(intent)
                     finish()
                     true
                 }

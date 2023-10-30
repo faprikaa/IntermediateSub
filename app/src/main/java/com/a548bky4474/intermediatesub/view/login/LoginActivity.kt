@@ -41,7 +41,6 @@ class LoginActivity : AppCompatActivity() {
                     setTitle("Oops !")
                     setMessage(it.message)
                     setNegativeButton("Oke") { dialog, _ ->
-                        viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
                         dialog.dismiss()
                         dialog.cancel()
                     }
@@ -55,7 +54,7 @@ class LoginActivity : AppCompatActivity() {
                     setMessage("Anda berhasil login. Lanjut ke halaman lanjutnya ?")
                     setPositiveButton("Lanjut") { dialog, _ ->
                         dialog.dismiss()
-                        dialog.cancel()
+                        viewModel.saveSession(UserModel(email, it.loginResult?.token!!))
                         val intent = Intent(this@LoginActivity, MainActivity::class.java)
                         intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                         startActivity(intent)
