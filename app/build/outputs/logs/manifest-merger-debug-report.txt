@@ -1,20 +1,20 @@
 -- Merging decision tree log ---
 provider#androidx.core.content.FileProvider
-INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:67:9-75:20
+INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:72:9-80:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:71:13-47
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:76:13-47
 	android:authorities
 		INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:69:13-64
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:74:13-64
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:70:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:75:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:13-62
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:73:13-62
 manifest
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-92:12
-INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-92:12
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-97:12
+INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:2:1-97:12
 MERGED from [androidx.databinding:viewbinding:8.1.2] D:\GradleCache\caches\transforms-3\dc1a8d493f522868fb0f4487ac800c4c\transformed\viewbinding-8.1.2\AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.9.0] D:\GradleCache\caches\transforms-3\95a4fd3b0b9333c39067fb2dc54b32e0\transformed\material-1.9.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] D:\GradleCache\caches\transforms-3\71aa75418979fbb2336871ae19d96591\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -23,12 +23,16 @@ MERGED from [androidx.appcompat:appcompat:1.6.1] D:\GradleCache\caches\transform
 MERGED from [com.github.bumptech.glide:glide:4.16.0] D:\GradleCache\caches\transforms-3\f02ea1a032e049edfb29920ce7bbee4d\transformed\glide-4.16.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:17:1-44:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\GradleCache\caches\transforms-3\9a64ce7051d8f86a22006b84987c2904\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-location:18.0.0] D:\GradleCache\caches\transforms-3\35e40c4463947db55273c430d7f4943d\transformed\play-services-location-18.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:16:1-24:12
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] D:\GradleCache\caches\transforms-3\2ada0477f334683496c1ad0f516dd670\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] D:\GradleCache\caches\transforms-3\e67b43a60518f34301e34029ead37e55\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
 MERGED from [androidx.fragment:fragment:1.3.6] D:\GradleCache\caches\transforms-3\026ad0f00555d63cea1e012998dc74fe\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.activity:activity:1.8.0] D:\GradleCache\caches\transforms-3\701a3c13b5c535d4162d001fd2fa5e9b\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.0] D:\GradleCache\caches\transforms-3\a89b5ebd20bb2b4056c755c75e46b108\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] D:\GradleCache\caches\transforms-3\71fa79033d46674b9b45f7db4e3bf631\transformed\paging-runtime-ktx-3.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.paging:paging-runtime:3.1.0] D:\GradleCache\caches\transforms-3\6537000e0660acf827468042ad8b6b79\transformed\paging-runtime-3.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\GradleCache\caches\transforms-3\76803ed64edeffa5d0f90bff07bfb7e3\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] D:\GradleCache\caches\transforms-3\9b2a07e3c9d244940dec7ade4af7d01d\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
@@ -49,7 +53,7 @@ MERGED from [androidx.transition:transition:1.2.0] D:\GradleCache\caches\transfo
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] D:\GradleCache\caches\transforms-3\eb73a948b8e756d3bec89e885eb5529f\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\GradleCache\caches\transforms-3\75ebca8751b73fcdbc720ba254da1365\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\GradleCache\caches\transforms-3\9dd8c570ddd4aac1095e8e8397222255\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\GradleCache\caches\transforms-3\07fad54b627b1746ee14a040957d02f4\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\GradleCache\caches\transforms-3\4b46057f3f3d353b4f694a74c6369986\transformed\recyclerview-1.2.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.1.0] D:\GradleCache\caches\transforms-3\3ad2289970d1deae894447686a66d853\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.12.0] D:\GradleCache\caches\transforms-3\2b5c3fa67654aedc46a43044a26ad2bf\transformed\core-1.12.0\AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.6.2] D:\GradleCache\caches\transforms-3\a27c6b9fbe299668b8ec1bb92c1968a6\transformed\lifecycle-runtime-2.6.2\AndroidManifest.xml:2:1-7:12
@@ -110,19 +114,39 @@ uses-permission#android.permission.READ_EXTERNAL_STORAGE
 ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:13:5-80
 	android:name
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:13:22-77
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:5-81
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:16:5-85
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:16:22-82
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:18:5-77
+	android:name
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:18:22-74
 application
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:5-90:19
-INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:15:5-90:19
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:5-95:19
+INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:5-95:19
 MERGED from [com.google.android.material:material:1.9.0] D:\GradleCache\caches\transforms-3\95a4fd3b0b9333c39067fb2dc54b32e0\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.9.0] D:\GradleCache\caches\transforms-3\95a4fd3b0b9333c39067fb2dc54b32e0\transformed\material-1.9.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] D:\GradleCache\caches\transforms-3\71aa75418979fbb2336871ae19d96591\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] D:\GradleCache\caches\transforms-3\71aa75418979fbb2336871ae19d96591\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:36:5-42:19
+MERGED from [com.google.android.gms:play-services-location:18.0.0] D:\GradleCache\caches\transforms-3\35e40c4463947db55273c430d7f4943d\transformed\play-services-location-18.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:18.0.0] D:\GradleCache\caches\transforms-3\35e40c4463947db55273c430d7f4943d\transformed\play-services-location-18.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:19:5-23:19
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] D:\GradleCache\caches\transforms-3\2ada0477f334683496c1ad0f516dd670\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] D:\GradleCache\caches\transforms-3\2ada0477f334683496c1ad0f516dd670\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] D:\GradleCache\caches\transforms-3\e67b43a60518f34301e34029ead37e55\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] D:\GradleCache\caches\transforms-3\e67b43a60518f34301e34029ead37e55\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:23:5-33:19
@@ -146,105 +170,105 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] D:\GradleCa
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.12.0] D:\GradleCache\caches\transforms-3\2b5c3fa67654aedc46a43044a26ad2bf\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:20:9-35
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:24:9-35
 	android:label
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:18:9-41
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:22:9-41
 	android:roundIcon
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:19:9-54
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:23:9-54
 	android:icon
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:17:9-43
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:21:9-43
 	android:allowBackup
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:21:9-53
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:25:9-53
 meta-data#com.google.android.geo.API_KEY
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:34:9-36:71
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:39:9-41:71
 	android:value
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:36:13-68
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:35:13-58
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:40:13-58
 activity#com.a548bky4474.intermediatesub.MapsActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:38:9-41:59
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:9-46:59
 	android:label
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:41:13-56
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:46:13-56
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:40:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:39:13-41
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-41
 activity#com.a548bky4474.intermediatesub.view.add.AddActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:42:9-44:40
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:49:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:13-49
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:48:13-49
 activity#com.a548bky4474.intermediatesub.view.detail.DetailActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:9-47:40
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:47:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:46:13-55
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:51:13-55
 activity#com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:48:9-50:48
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:53:9-55:48
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:50:13-36
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:55:13-36
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:49:13-57
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:54:13-57
 activity#com.a548bky4474.intermediatesub.view.register.RegisterActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:51:9-53:40
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:53:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:58:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:52:13-59
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:57:13-59
 activity#com.a548bky4474.intermediatesub.view.login.LoginActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:54:9-56:39
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:59:9-61:39
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:56:13-36
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:55:13-53
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:60:13-53
 activity#com.a548bky4474.intermediatesub.view.main.MainActivity
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:57:9-65:20
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:62:9-70:20
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:59:13-36
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:64:13-36
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:58:13-51
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:63:13-51
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:60:13-64:29
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:65:13-69:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:61:17-69
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:17-69
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:61:25-66
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:63:17-77
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:17-77
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:63:27-74
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:27-74
 service#com.google.android.gms.metadata.ModuleDependencies
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:77:9-89:19
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:82:9-94:19
 	android:enabled
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:79:13-36
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:84:13-36
 	android:exported
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:80:13-37
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:85:13-37
 	tools:ignore
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:81:13-40
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:86:13-40
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:78:13-78
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:83:13-78
 intent-filter#action:name:com.google.android.gms.metadata.MODULE_DEPENDENCIES
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:82:13-84:29
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:87:13-89:29
 action#com.google.android.gms.metadata.MODULE_DEPENDENCIES
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:83:17-94
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:17-94
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:83:25-91
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:25-91
 meta-data#photopicker_activity:0:required
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:86:13-88:36
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:91:13-93:36
 	android:value
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:17-33
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:93:17-33
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:87:17-63
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:92:17-63
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:72:13-74:54
+ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:77:13-79:54
 	android:resource
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:74:17-51
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:79:17-51
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:73:17-67
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:78:17-67
 uses-sdk
 INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml
@@ -265,10 +289,14 @@ MERGED from [com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\ca
 MERGED from [com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\GradleCache\caches\transforms-3\9a64ce7051d8f86a22006b84987c2904\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] D:\GradleCache\caches\transforms-3\9a64ce7051d8f86a22006b84987c2904\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-location:18.0.0] D:\GradleCache\caches\transforms-3\35e40c4463947db55273c430d7f4943d\transformed\play-services-location-18.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:18.0.0] D:\GradleCache\caches\transforms-3\35e40c4463947db55273c430d7f4943d\transformed\play-services-location-18.0.0\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] D:\GradleCache\caches\transforms-3\2ada0477f334683496c1ad0f516dd670\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-tasks:18.0.1] D:\GradleCache\caches\transforms-3\2ada0477f334683496c1ad0f516dd670\transformed\play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] D:\GradleCache\caches\transforms-3\e67b43a60518f34301e34029ead37e55\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] D:\GradleCache\caches\transforms-3\e67b43a60518f34301e34029ead37e55\transformed\play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
 MERGED from [androidx.fragment:fragment:1.3.6] D:\GradleCache\caches\transforms-3\026ad0f00555d63cea1e012998dc74fe\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
@@ -277,6 +305,10 @@ MERGED from [androidx.activity:activity:1.8.0] D:\GradleCache\caches\transforms-
 MERGED from [androidx.activity:activity:1.8.0] D:\GradleCache\caches\transforms-3\701a3c13b5c535d4162d001fd2fa5e9b\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.0] D:\GradleCache\caches\transforms-3\a89b5ebd20bb2b4056c755c75e46b108\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.0] D:\GradleCache\caches\transforms-3\a89b5ebd20bb2b4056c755c75e46b108\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] D:\GradleCache\caches\transforms-3\71fa79033d46674b9b45f7db4e3bf631\transformed\paging-runtime-ktx-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime-ktx:3.1.0] D:\GradleCache\caches\transforms-3\71fa79033d46674b9b45f7db4e3bf631\transformed\paging-runtime-ktx-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime:3.1.0] D:\GradleCache\caches\transforms-3\6537000e0660acf827468042ad8b6b79\transformed\paging-runtime-3.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.paging:paging-runtime:3.1.0] D:\GradleCache\caches\transforms-3\6537000e0660acf827468042ad8b6b79\transformed\paging-runtime-3.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\GradleCache\caches\transforms-3\76803ed64edeffa5d0f90bff07bfb7e3\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] D:\GradleCache\caches\transforms-3\76803ed64edeffa5d0f90bff07bfb7e3\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:21:5-44
@@ -317,8 +349,8 @@ MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\GradleCache\caches
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] D:\GradleCache\caches\transforms-3\75ebca8751b73fcdbc720ba254da1365\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\GradleCache\caches\transforms-3\9dd8c570ddd4aac1095e8e8397222255\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] D:\GradleCache\caches\transforms-3\9dd8c570ddd4aac1095e8e8397222255\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\GradleCache\caches\transforms-3\07fad54b627b1746ee14a040957d02f4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] D:\GradleCache\caches\transforms-3\07fad54b627b1746ee14a040957d02f4\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\GradleCache\caches\transforms-3\4b46057f3f3d353b4f694a74c6369986\transformed\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.0] D:\GradleCache\caches\transforms-3\4b46057f3f3d353b4f694a74c6369986\transformed\recyclerview-1.2.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] D:\GradleCache\caches\transforms-3\3ad2289970d1deae894447686a66d853\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.1.0] D:\GradleCache\caches\transforms-3\3ad2289970d1deae894447686a66d853\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.12.0] D:\GradleCache\caches\transforms-3\2b5c3fa67654aedc46a43044a26ad2bf\transformed\core-1.12.0\AndroidManifest.xml:20:5-44

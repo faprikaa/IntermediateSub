@@ -3,6 +3,7 @@ local
 color black
 color fefefe
 color navy
+color ungu
 color white
 drawable appps
 drawable baseline_add_24
@@ -62,7 +63,9 @@ id tvCreatedAt
 id tvDeskripsi
 id tvDeskripsiAdd
 id tvDeskripsiDt
+id tvLat
 id tvLogin
+id tvLong
 id tvNama
 id tvNamaDt
 layout activity_add
@@ -83,8 +86,11 @@ string gallery
 string gambardicoding
 string greeting
 string image_fo_story
+string lat
+string latitude
 string login
 string logout
+string longtitude
 string message_login_page
 string message_main_page
 string message_welcome_page

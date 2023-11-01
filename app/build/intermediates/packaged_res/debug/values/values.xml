@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="fefefe">#FEFEFE</color>
     <color name="navy">#2D3D4F</color>
+    <color name="ungu">#8E24AA</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">IntermediateSub</string>
     <string name="email">Email</string>
@@ -10,8 +11,10 @@
     <string name="gambardicoding">GambarDicoding</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="image_fo_story">Image from Story</string>
+    <string name="latitude">Lat: %s</string>
     <string name="login">Masuk</string>
     <string name="logout">Keluar</string>
+    <string name="longtitude">Long: %s</string>
     <string name="message_login_page">Masukkan dulu datamu ya</string>
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
     <string name="message_welcome_page">Anda bisa membagikan foto anda kepada orang lain dan melihat foto yang dibagikan orang lain.</string>

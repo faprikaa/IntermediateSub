@@ -2094,6 +2094,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color ungu
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -3618,7 +3619,9 @@ id tvCreatedAt
 id tvDeskripsi
 id tvDeskripsiAdd
 id tvDeskripsiDt
+id tvLat
 id tvLogin
+id tvLong
 id tvNama
 id tvNamaDt
 id unchecked
@@ -3929,8 +3932,11 @@ string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string image_fo_story
 string item_view_role_description
+string lat
+string latitude
 string login
 string logout
+string longtitude
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
 string m3_ref_typeface_plain_medium

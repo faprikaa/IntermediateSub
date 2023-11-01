@@ -3,6 +3,7 @@ package com.a548bky4474.intermediatesub.view.detail
 import android.os.Build
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import com.a548bky4474.intermediatesub.R
 import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
 import com.a548bky4474.intermediatesub.view.StoryAdapter
@@ -29,6 +30,8 @@ class DetailActivity : AppCompatActivity() {
             .load(detailStory.photoUrl)
             .into(binding.ivStoryDt)
         binding.tvNamaDt.text = detailStory.name
+        binding.tvLong.text = getString(R.string.longtitude, detailStory.lon.toString().slice(1..7))
+        binding.tvLat.text = getString(R.string.latitude, detailStory.lat.toString().slice(1..7))
         binding.tvDeskripsiDt.text = detailStory.description
         binding.tvCreatedAt.text = dateFormatter(detailStory.createdAt)
     }

@@ -2093,6 +2093,7 @@ int color switch_thumb_normal_material_dark 0x7f0502f0
 int color switch_thumb_normal_material_light 0x7f0502f1
 int color tooltip_background_dark 0x7f0502f2
 int color tooltip_background_light 0x7f0502f3
+int color ungu 0x7f0502f5
 int color white 0x7f0502f4
 int dimen abc_action_bar_content_inset_material 0x7f060000
 int dimen abc_action_bar_content_inset_with_nav 0x7f060001
@@ -3617,7 +3618,9 @@ int id tvCreatedAt 0x7f080206
 int id tvDeskripsi 0x7f080207
 int id tvDeskripsiAdd 0x7f080208
 int id tvDeskripsiDt 0x7f080209
+int id tvLat 0x7f080226
 int id tvLogin 0x7f08020a
+int id tvLong 0x7f080227
 int id tvNama 0x7f08020b
 int id tvNamaDt 0x7f08020c
 int id unchecked 0x7f08020d
@@ -3928,8 +3931,11 @@ int string hide_bottom_view_on_scroll_behavior 0x7f10004a
 int string icon_content_description 0x7f10004b
 int string image_fo_story 0x7f10004c
 int string item_view_role_description 0x7f10004d
+int string lat 0x7f1000c9
+int string latitude 0x7f1000cb
 int string login 0x7f10004e
 int string logout 0x7f10004f
+int string longtitude 0x7f1000ca
 int string m3_ref_typeface_brand_medium 0x7f100050
 int string m3_ref_typeface_brand_regular 0x7f100051
 int string m3_ref_typeface_plain_medium 0x7f100052

@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun setupRecyclerView() {
-        viewModel.getStories()
+        viewModel.getStoriesWithLocation()
         viewModel.stories.observe(this) { stories ->
             val adapter = StoryAdapter()
             dataStoryWithLocation = stories
@@ -127,7 +127,6 @@ class MainActivity : AppCompatActivity() {
                     val intent = Intent(this, MapsActivity::class.java)
                     intent.putExtra("mapsData", dataStoryWithLocation)
                     startActivity(intent)
-                    finish()
                     true
                 }
                 else -> false

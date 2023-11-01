@@ -17,4 +17,6 @@
     <string name="gallery">Gallery</string>
     <string name="image_fo_story">Image from Story</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="longtitude">Long: %s</string>
+    <string name="latitude">Lat: %s</string>
 </resources>
