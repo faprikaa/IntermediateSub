@@ -5,10 +5,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import androidx.paging.PagingData
 import com.a548bky4474.intermediatesub.data.pref.UserModel
+import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.data.response.StoryResponse
 import com.a548bky4474.intermediatesub.repository.StoryRepository
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 
 class MainViewModel(private val repository: StoryRepository) : ViewModel() {
@@ -17,6 +18,13 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
 
     private val _stories = MutableLiveData<StoryResponse>()
     val stories: LiveData<StoryResponse> = _stories
+    var story: LiveData<PagingData<ListStoryItem>>? = null
+    fun fetchStory() {
+        viewModelScope.launch {
+            repository.getSession().collect {
+                story = repository.getStoriesPagingRepo(it.token)
+            }
+        }    }
 
     fun getSession(): LiveData<UserModel> {
         userModel = repository.getSession().asLiveData()
@@ -43,6 +51,4 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
             }
         }
     }
-
-
 }

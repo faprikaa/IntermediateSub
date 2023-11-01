@@ -8,6 +8,7 @@ import com.a548bky4474.intermediatesub.repository.StoryRepository
 import com.a548bky4474.intermediatesub.view.add.AddViewModel
 import com.a548bky4474.intermediatesub.view.login.LoginViewModel
 import com.a548bky4474.intermediatesub.view.main.MainViewModel
+import com.a548bky4474.intermediatesub.view.maps.MapsViewModel
 import com.a548bky4474.intermediatesub.view.register.RegisterViewModel
 
 class ViewModelFactory(private val repository: StoryRepository) : ViewModelProvider.NewInstanceFactory() {
@@ -26,6 +27,9 @@ class ViewModelFactory(private val repository: StoryRepository) : ViewModelProvi
             }
             modelClass.isAssignableFrom(AddViewModel::class.java) -> {
                 AddViewModel(repository) as T
+            }
+            modelClass.isAssignableFrom(MapsViewModel::class.java) -> {
+                MapsViewModel(repository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }

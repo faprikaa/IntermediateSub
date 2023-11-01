@@ -113,8 +113,8 @@
 70
 71        <activity
 71-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:9-46:59
-72            android:name="com.a548bky4474.intermediatesub.MapsActivity"
-72-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-41
+72            android:name="com.a548bky4474.intermediatesub.view.maps.MapsActivity"
+72-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-51
 73            android:exported="false"
 73-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:13-37
 74            android:label="@string/title_activity_maps" />

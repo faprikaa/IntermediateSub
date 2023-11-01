@@ -69,7 +69,7 @@
             android:value="AIzaSyDxGE4jJG3tlORTWlYRcNDGokalW9EJ2bk" />
 
         <activity
-            android:name="com.a548bky4474.intermediatesub.MapsActivity"
+            android:name="com.a548bky4474.intermediatesub.view.maps.MapsActivity"
             android:exported="false"
             android:label="@string/title_activity_maps" />
         <activity

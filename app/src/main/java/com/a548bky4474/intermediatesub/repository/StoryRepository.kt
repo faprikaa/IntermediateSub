@@ -1,12 +1,20 @@
 package com.a548bky4474.intermediatesub.repository
 
 import android.location.Location
+import androidx.lifecycle.LiveData
+import androidx.paging.Pager
+import androidx.paging.PagingConfig
+import androidx.paging.PagingData
+import androidx.paging.liveData
+import com.a548bky4474.intermediatesub.data.paging.StoryPagingSource
 import com.a548bky4474.intermediatesub.data.pref.UserModel
-import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig
 import com.a548bky4474.intermediatesub.data.pref.UserPreference
+import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.data.response.LoginResponse
 import com.a548bky4474.intermediatesub.data.response.RegisterResponse
 import com.a548bky4474.intermediatesub.data.response.StoryResponse
+import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig
+import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig.getApiServiceWithToken
 import com.google.gson.Gson
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
@@ -86,11 +94,15 @@ class StoryRepository private constructor(
                 imageFile.name,
                 requestImageFile
             )
+            val lon: Double? = if (currentLocation.longitude == 0.0) null else currentLocation.longitude
+            val lat: Double? = if (currentLocation.latitude == 0.0) null else currentLocation.latitude
+
             val response = ApiConfig.getApiServiceWithToken(token).uploadImage(
                 multipartBody,
-                currentLocation.latitude.toDouble(),
-                currentLocation.longitude.toDouble(),
-                requestBody).execute()
+                lat,
+                lon,
+                requestBody
+            ).execute()
             return@withContext if (response.isSuccessful) {
                 response.body()!!
             } else {
@@ -98,6 +110,18 @@ class StoryRepository private constructor(
                 Gson().fromJson<RegisterResponse?>(jsonInString, RegisterResponse::class.java)
             }
         }
+    }
+
+    fun getStoriesPagingRepo(token: String): LiveData<PagingData<ListStoryItem>> {
+        var apiService = getApiServiceWithToken(token)
+        return Pager(
+            config = PagingConfig(
+                pageSize = 5
+            ),
+            pagingSourceFactory = {
+                StoryPagingSource(apiService)
+            }
+        ).liveData
     }
 
     companion object {

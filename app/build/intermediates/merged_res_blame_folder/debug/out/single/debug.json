@@ -20,10 +20,6 @@
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.a548bky4474.intermediatesub.app-merged_res-4:/layout_activity_add.xml.flat",
-        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_add.xml"
-    },
-    {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\drawable_image_login.webp.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\image_login.webp"
     },
@@ -108,6 +104,10 @@
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\baseline_map_24.xml"
     },
     {
+        "merged": "com.a548bky4474.intermediatesub.app-merged_res-4:/layout_activity_detail.xml.flat",
+        "source": "com.a548bky4474.intermediatesub.app-main-6:/layout/activity_detail.xml"
+    },
+    {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\drawable_baseline_add_24.xml.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\drawable\\baseline_add_24.xml"
     },
@@ -142,6 +142,10 @@
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
         "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\layout_item_loading.xml.flat",
+        "source": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-main-6:\\layout\\item_loading.xml"
     },
     {
         "merged": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-merged_res-4:\\drawable_image_signup.webp.flat",

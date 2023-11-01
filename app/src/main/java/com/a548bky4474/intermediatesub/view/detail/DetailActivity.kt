@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.a548bky4474.intermediatesub.R
 import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
-import com.a548bky4474.intermediatesub.view.StoryAdapter
+import com.a548bky4474.intermediatesub.view.adapter.StoryAdapter
 import com.a548bky4474.intermediatesub.view.dateFormatter
 import com.bumptech.glide.Glide
 
@@ -24,16 +24,16 @@ class DetailActivity : AppCompatActivity() {
         } else {
             @Suppress("DEPRECATION")
             detailStory = intent.getParcelableExtra(StoryAdapter.PARCEL_NAME)!!
+
         }
 
         Glide.with(binding.root)
             .load(detailStory.photoUrl)
             .into(binding.ivStoryDt)
         binding.tvNamaDt.text = detailStory.name
-        binding.tvLong.text = getString(R.string.longtitude, detailStory.lon.toString().slice(1..7))
-        binding.tvLat.text = getString(R.string.latitude, detailStory.lat.toString().slice(1..7))
+        binding.tvLong.text = getString(R.string.longtitude, detailStory.lon.toString().take(7) ?: null)
+        binding.tvLat.text = getString(R.string.latitude, detailStory.lat.toString().take(7) ?: null)
         binding.tvDeskripsiDt.text = detailStory.description
         binding.tvCreatedAt.text = dateFormatter(detailStory.createdAt)
     }
-
 }

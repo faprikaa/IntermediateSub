@@ -187,14 +187,14 @@ ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:41:13-68
 	android:name
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:40:13-58
-activity#com.a548bky4474.intermediatesub.MapsActivity
+activity#com.a548bky4474.intermediatesub.view.maps.MapsActivity
 ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:9-46:59
 	android:label
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:46:13-56
 	android:exported
 		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:13-37
 	android:name
-		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-41
+		ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-51
 activity#com.a548bky4474.intermediatesub.view.add.AddActivity
 ADDED from C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:47:9-49:40
 	android:exported

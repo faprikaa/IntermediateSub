@@ -19,4 +19,17 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="longtitude">Long: %s</string>
     <string name="latitude">Lat: %s</string>
+    <string name="retry">Coba lagi</string>
+    <string name="camera">Camera</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="upload">Upload</string>
+    <string name="latitude_full">Latitude</string>
+    <string name="longitude_full">Longitude</string>
+    <string name="send_current_location">Send Current Location</string>
+    <string name="disini_waktu">Disini Waktu</string>
+    <string name="disini_lat">Disini Lat</string>
+    <string name="disini_long">Disini Long</string>
+    <string name="disini_deskripsi">Disini deskripsi</string>
+    <string name="add_new_story">Add New Story</string>
+
 </resources>

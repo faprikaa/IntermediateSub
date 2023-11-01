@@ -16,18 +16,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.appcompat.app.AppCompatDelegate.MODE_NIGHT_NO
 import androidx.core.content.ContextCompat
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.a548bky4474.intermediatesub.MapsActivity
 import com.a548bky4474.intermediatesub.R
-import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.data.response.StoryResponse
 import com.a548bky4474.intermediatesub.databinding.ActivityMainBinding
-import com.a548bky4474.intermediatesub.view.StoryAdapter
 import com.a548bky4474.intermediatesub.view.ViewModelFactory
+import com.a548bky4474.intermediatesub.view.adapter.LoadingStateAdapter
+import com.a548bky4474.intermediatesub.view.adapter.StoryPagingAdapter
 import com.a548bky4474.intermediatesub.view.add.AddActivity
+import com.a548bky4474.intermediatesub.view.maps.MapsActivity
 import com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity
-import com.google.gson.Gson
 
 class MainActivity : AppCompatActivity() {
     private val viewModel by viewModels<MainViewModel> {
@@ -83,16 +81,17 @@ class MainActivity : AppCompatActivity() {
         }
 
     private fun setupRecyclerView() {
-        viewModel.getStoriesWithLocation()
-        viewModel.stories.observe(this) { stories ->
-            val adapter = StoryAdapter()
-            dataStoryWithLocation = stories
-            adapter.submitList(stories.listStory)
-            binding.rvStory.adapter = adapter
-            val layoutManager = LinearLayoutManager(this)
-            binding.rvStory.layoutManager = layoutManager
-//            val itemDecoration = DividerItemDecoration(this, layoutManager.orientation)
-//            binding.rvStory.addItemDecoration(itemDecoration)
+        val adapter = StoryPagingAdapter()
+        val layoutManager = LinearLayoutManager(this)
+        binding.rvStory.layoutManager = layoutManager
+        binding.rvStory.adapter = adapter.withLoadStateFooter(
+            footer = LoadingStateAdapter {
+                adapter.retry()
+            }
+        )
+        viewModel.fetchStory()
+        viewModel.story?.observe(this) {
+            adapter.submitData(lifecycle, it)
         }
     }
 
@@ -125,7 +124,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.mapIcon -> {
                     val intent = Intent(this, MapsActivity::class.java)
-                    intent.putExtra("mapsData", dataStoryWithLocation)
                     startActivity(intent)
                     true
                 }

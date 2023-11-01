@@ -2,4 +2,11 @@
 <resources>
     <string name="login">Masuk</string>
     <string name="lat">"Lat: "</string>
+    <string name="camera">Camera</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="upload">Upload</string>
+    <string name="disini_waktu">Disini Waktu</string>
+    <string name="disini_lat">Disini Lat</string>
+    <string name="disini_long">Disini Long</string>
+    <string name="disini_deskripsi">Disini deskripsi</string>
 </resources>

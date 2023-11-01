@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.a548bky4474.intermediatesub.data.pref.UserModel
 import com.a548bky4474.intermediatesub.data.response.LoginResponse
-import com.a548bky4474.intermediatesub.data.response.RegisterResponse
 import com.a548bky4474.intermediatesub.repository.StoryRepository
 import kotlinx.coroutines.launch
 

@@ -35,6 +35,12 @@ interface ApiService {
     fun getStories(): Call<StoryResponse>
 
     @GET("stories")
+    suspend fun getStoriesForPaging(
+        @Query("page") page: Int = 1,
+        @Query("size") size: Int = 20
+    ): StoryResponse
+
+    @GET("stories")
     fun getStoriesWithLocation(
         @Query("location") location : Int = 1,
     ): Call<StoryResponse>

@@ -117,8 +117,6 @@ class LoginActivity : AppCompatActivity() {
             ObjectAnimator.ofFloat(binding.btnLogin, View.ALPHA, 1f).setDuration(150)
         val btnRegister =
             ObjectAnimator.ofFloat(binding.btnRegister, View.ALPHA, 1f).setDuration(150)
-//        val signup = ObjectAnimator.ofFloat(binding.signupButton, View.ALPHA, 1f).setDuration(100)
-
 
         AnimatorSet().apply {
             playSequentially(

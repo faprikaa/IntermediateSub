@@ -1,4 +1,4 @@
-package com.a548bky4474.intermediatesub.view
+package com.a548bky4474.intermediatesub.view.adapter
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -21,10 +21,6 @@ class StoryAdapter:
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = getItem(position)
         holder.bind(item)
-    }
-
-    interface ItemClickListener {
-        fun onItemClick(item: ListStoryItem)
     }
 
     class MyViewHolder(private val binding: ItemStoryBinding) : RecyclerView.ViewHolder(binding.root) {

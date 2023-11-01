@@ -7,24 +7,23 @@ import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.view.View
+import android.widget.CompoundButton
 import android.widget.Toast
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.location.LocationManagerCompat
 import com.a548bky4474.intermediatesub.R
 import com.a548bky4474.intermediatesub.databinding.ActivityAddBinding
-import com.a548bky4474.intermediatesub.databinding.ActivityDetailBinding
 import com.a548bky4474.intermediatesub.view.ViewModelFactory
 import com.a548bky4474.intermediatesub.view.getImageUri
-import com.a548bky4474.intermediatesub.view.login.LoginViewModel
 import com.a548bky4474.intermediatesub.view.main.MainActivity
 import com.a548bky4474.intermediatesub.view.reduceFileImage
 import com.a548bky4474.intermediatesub.view.uriToFile
@@ -52,14 +51,16 @@ class AddActivity : AppCompatActivity() {
                     // Precise location access granted.
                     getMyLastLocation()
                 }
+
                 permissions[Manifest.permission.ACCESS_COARSE_LOCATION] ?: false -> {
                     // Only approximate location access granted.
                     getMyLastLocation()
                 }
+
                 else -> {
                     // No location access granted.
                     val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-                    if (!LocationManagerCompat.isLocationEnabled(locationManager)){
+                    if (!LocationManagerCompat.isLocationEnabled(locationManager)) {
                         startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
                     }
 
@@ -80,9 +81,22 @@ class AddActivity : AppCompatActivity() {
             uploadImage()
             binding.pbAdd.visibility = View.GONE
         }
-        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
-        getMyLastLocation()
+        binding.tvLatAdd.text = getString(R.string.latitude, null)
+        binding.tvLonAdd.text = getString(R.string.longtitude, null)
+
+        binding.useLoc.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
+            if (isChecked) {
+                fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+                getMyLastLocation()
+            } else {
+                binding.tvLatAdd.text = getString(R.string.latitude, null)
+                binding.tvLonAdd.text = getString(R.string.longtitude, null)
+                myLocation.latitude = 0.0
+                myLocation.longitude = 0.0
+            }
+        }
     }
+
 
     private fun startGallery() {
         launcherGallery.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
@@ -160,6 +174,7 @@ class AddActivity : AppCompatActivity() {
             permission
         ) == PackageManager.PERMISSION_GRANTED
     }
+
     private fun getMyLastLocation() {
         if (checkPermission(Manifest.permission.ACCESS_FINE_LOCATION) &&
             checkPermission(Manifest.permission.ACCESS_COARSE_LOCATION)
@@ -167,11 +182,12 @@ class AddActivity : AppCompatActivity() {
             fusedLocationClient.lastLocation.addOnSuccessListener { location: Location? ->
                 if (location != null) {
                     myLocation = location
-                    binding.tvLatAdd.text = myLocation.latitude.toString()
-                    binding.tvLonAdd.text = myLocation.longitude.toString()
+                    binding.tvLatAdd.text = getString(R.string.latitude, myLocation.latitude.toString().slice(1..7))
+                    binding.tvLonAdd.text = getString(R.string.longtitude, myLocation.longitude.toString().slice(1..7))
                 } else {
-                    Log.i("ingfo", "no")
-
+                    Toast.makeText(this, "Gagal mendapatkan lokasi !", Toast.LENGTH_SHORT).show()
+                    binding.tvLatAdd.text = getString(R.string.latitude, null)
+                    binding.tvLonAdd.text = getString(R.string.longtitude, null)
                 }
             }
         } else {

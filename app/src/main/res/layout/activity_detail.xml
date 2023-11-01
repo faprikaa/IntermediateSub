@@ -24,26 +24,26 @@
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
         android:text="Disini Nama"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivStoryDt"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.10" />
 
     <TextView
         android:id="@+id/tvCreatedAt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Disini Waktu"
+        android:text="@string/disini_waktu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.95"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ivStoryDt"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.13" />
 
     <TextView
         android:id="@+id/tvLat"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="50dp"
-        android:text="Disini Lat"
+        android:text="@string/disini_lat"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="5dp"
-        android:text="Disini Long"
+        android:text="@string/disini_long"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -79,7 +79,7 @@
         android:layout_height="wrap_content"
         android:paddingStart="20dp"
         android:paddingTop="10dp"
-        android:text="Disini deskripsi"
+        android:text="@string/disini_deskripsi"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
