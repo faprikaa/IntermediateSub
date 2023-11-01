@@ -64,7 +64,9 @@ id tvDeskripsi
 id tvDeskripsiAdd
 id tvDeskripsiDt
 id tvLat
+id tvLatAdd
 id tvLogin
+id tvLonAdd
 id tvLong
 id tvNama
 id tvNamaDt

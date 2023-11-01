@@ -1,5 +1,6 @@
 package com.a548bky4474.intermediatesub.repository
 
+import android.location.Location
 import com.a548bky4474.intermediatesub.data.pref.UserModel
 import com.a548bky4474.intermediatesub.data.retrofit.ApiConfig
 import com.a548bky4474.intermediatesub.data.pref.UserPreference
@@ -76,7 +77,7 @@ class StoryRepository private constructor(
         userPreference.logout()
     }
 
-    suspend fun uploadImage(imageFile: File, description: String, token: String): RegisterResponse {
+    suspend fun uploadImage(imageFile: File, currentLocation: Location,description: String, token: String): RegisterResponse {
         return withContext(Dispatchers.IO) {
             val requestBody = description.toRequestBody("text/plain".toMediaType())
             val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
@@ -85,7 +86,11 @@ class StoryRepository private constructor(
                 imageFile.name,
                 requestImageFile
             )
-            val response = ApiConfig.getApiServiceWithToken(token).uploadImage(multipartBody, requestBody).execute()
+            val response = ApiConfig.getApiServiceWithToken(token).uploadImage(
+                multipartBody,
+                currentLocation.latitude.toDouble(),
+                currentLocation.longitude.toDouble(),
+                requestBody).execute()
             return@withContext if (response.isSuccessful) {
                 response.body()!!
             } else {

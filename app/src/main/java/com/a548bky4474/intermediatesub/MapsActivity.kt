@@ -102,14 +102,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         mMap.uiSettings.isIndoorLevelPickerEnabled = true
         mMap.uiSettings.isCompassEnabled = true
         mMap.uiSettings.isMapToolbarEnabled = true
-        // Add a marker in Sydney and move the camera
-        val Indonesia = LatLng(-3.1187543109400644, 115.31581867888131)
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(Indonesia))
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(Indonesia, 5f))
 
         setMapStyle()
         createLocationRequest()
-
 
         dataStoryWithLocation.listStory.forEach { data ->
             val latLng = data.lat?.let { data.lon?.let { it1 -> LatLng(it, it1) } }
@@ -121,15 +116,16 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             )
             boundsBuilder.include(latLng)
         }
-        val bounds: LatLngBounds = boundsBuilder.build()
-        mMap.animateCamera(
-            CameraUpdateFactory.newLatLngBounds(
-                bounds,
-                resources.displayMetrics.widthPixels,
-                resources.displayMetrics.heightPixels,
-                300
-            )
-        )
+
+//        val bounds: LatLngBounds = boundsBuilder.build()
+//        mMap.animateCamera(
+//            CameraUpdateFactory.newLatLngBounds(
+//                bounds,
+//                resources.displayMetrics.widthPixels,
+//                resources.displayMetrics.heightPixels,
+//                300
+//            )
+//        )
 
     }
 
@@ -148,6 +144,9 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 if (location != null) {
                     mMap.isMyLocationEnabled = true
                     myLocation = location
+                    val diriSendiri = LatLng(location.latitude, location.longitude)
+                    mMap.moveCamera(CameraUpdateFactory.newLatLng(diriSendiri))
+                    mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(diriSendiri, 10f))
                 } else {
                     Toast.makeText(
                         this@MapsActivity,

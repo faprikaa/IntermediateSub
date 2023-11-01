@@ -3619,7 +3619,9 @@ int id tvDeskripsi 0x7f080207
 int id tvDeskripsiAdd 0x7f080208
 int id tvDeskripsiDt 0x7f080209
 int id tvLat 0x7f080226
+int id tvLatAdd 0x7f080228
 int id tvLogin 0x7f08020a
+int id tvLonAdd 0x7f080229
 int id tvLong 0x7f080227
 int id tvNama 0x7f08020b
 int id tvNamaDt 0x7f08020c
