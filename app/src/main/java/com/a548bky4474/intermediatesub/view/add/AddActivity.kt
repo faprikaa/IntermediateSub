@@ -35,7 +35,7 @@ class AddActivity : AppCompatActivity() {
     private var currentImageUri: Uri? = null
     private lateinit var binding: ActivityAddBinding
     private lateinit var fusedLocationClient: FusedLocationProviderClient
-    private lateinit var myLocation: Location
+    private var myLocation: Location? = null
     private lateinit var locationRequest: LocationRequest
     private val viewModel by viewModels<AddViewModel> {
         ViewModelFactory.getInstance(this)
@@ -91,8 +91,8 @@ class AddActivity : AppCompatActivity() {
             } else {
                 binding.tvLatAdd.text = getString(R.string.latitude, null)
                 binding.tvLonAdd.text = getString(R.string.longtitude, null)
-                myLocation.latitude = 0.0
-                myLocation.longitude = 0.0
+                myLocation?.latitude = 0.0
+                myLocation?.longitude = 0.0
             }
         }
     }
@@ -182,12 +182,14 @@ class AddActivity : AppCompatActivity() {
             fusedLocationClient.lastLocation.addOnSuccessListener { location: Location? ->
                 if (location != null) {
                     myLocation = location
-                    binding.tvLatAdd.text = getString(R.string.latitude, myLocation.latitude.toString().slice(1..7))
-                    binding.tvLonAdd.text = getString(R.string.longtitude, myLocation.longitude.toString().slice(1..7))
+                    binding.tvLatAdd.text = getString(R.string.latitude, myLocation?.latitude.toString().slice(1..7))
+                    binding.tvLonAdd.text = getString(R.string.longtitude, myLocation?.longitude.toString().slice(1..7))
                 } else {
                     Toast.makeText(this, "Gagal mendapatkan lokasi !", Toast.LENGTH_SHORT).show()
                     binding.tvLatAdd.text = getString(R.string.latitude, null)
                     binding.tvLonAdd.text = getString(R.string.longtitude, null)
+                    myLocation?.latitude = 0.0
+                    myLocation?.longitude = 0.0
                 }
             }
         } else {

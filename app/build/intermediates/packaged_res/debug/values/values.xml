@@ -5,15 +5,24 @@
     <color name="navy">#2D3D4F</color>
     <color name="ungu">#8E24AA</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="add_new_story">Add New Story</string>
     <string name="app_name">IntermediateSub</string>
+    <string name="camera">Camera</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="disini_deskripsi">Disini deskripsi</string>
+    <string name="disini_lat">Disini Lat</string>
+    <string name="disini_long">Disini Long</string>
+    <string name="disini_waktu">Disini Waktu</string>
     <string name="email">Email</string>
     <string name="gallery">Gallery</string>
     <string name="gambardicoding">GambarDicoding</string>
     <string name="greeting">Halo %1$s,</string>
     <string name="image_fo_story">Image from Story</string>
     <string name="latitude">Lat: %s</string>
+    <string name="latitude_full">Latitude</string>
     <string name="login">Masuk</string>
     <string name="logout">Keluar</string>
+    <string name="longitude_full">Longitude</string>
     <string name="longtitude">Long: %s</string>
     <string name="message_login_page">Masukkan dulu datamu ya</string>
     <string name="message_main_page">Selamat Belajar di Dicoding.</string>
@@ -21,10 +30,13 @@
     <string name="name">Nama</string>
     <string name="password">Password</string>
     <string name="register">Daftar</string>
+    <string name="retry">Coba lagi</string>
+    <string name="send_current_location">Send Current Location</string>
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_login_page">Sudah siap untuk upgrade skill?</string>
     <string name="title_signup_page">Lengkapi data dirimu di bawah ini ya</string>
     <string name="title_welcome_page">Selamat datang di Dicoding Storyapp !</string>
+    <string name="upload">Upload</string>
     <style name="Base.Theme.IntermediateSub" parent="Theme.Material3.DayNight.NoActionBar">
         
         

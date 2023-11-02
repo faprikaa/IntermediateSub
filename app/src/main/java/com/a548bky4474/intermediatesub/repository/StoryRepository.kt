@@ -52,14 +52,12 @@ class StoryRepository private constructor(
         }
     }
 
-    suspend fun getStoriesRepo(token: String): StoryResponse {
-        return withContext(Dispatchers.IO) {
-            if (token.isEmpty()) {
-                return@withContext StoryResponse()
-            } else {
-                return@withContext ApiConfig.getApiServiceWithToken(token).getStories().execute().body()!!
+    fun getStoriesRepo(token: String): StoryResponse {
+        return if (token.isEmpty()) {
+            StoryResponse()
+        } else {
+            getApiServiceWithToken(token).getStories().execute().body()!!
 
-            }
         }
     }
     suspend fun getStoriesWithLocationRepo(token: String): StoryResponse {
@@ -85,7 +83,7 @@ class StoryRepository private constructor(
         userPreference.logout()
     }
 
-    suspend fun uploadImage(imageFile: File, currentLocation: Location,description: String, token: String): RegisterResponse {
+    suspend fun uploadImage(imageFile: File, currentLocation: Location?,description: String, token: String): RegisterResponse {
         return withContext(Dispatchers.IO) {
             val requestBody = description.toRequestBody("text/plain".toMediaType())
             val requestImageFile = imageFile.asRequestBody("image/jpeg".toMediaType())
@@ -94,8 +92,14 @@ class StoryRepository private constructor(
                 imageFile.name,
                 requestImageFile
             )
-            val lon: Double? = if (currentLocation.longitude == 0.0) null else currentLocation.longitude
-            val lat: Double? = if (currentLocation.latitude == 0.0) null else currentLocation.latitude
+            var lon: Double? = null
+            var lat: Double? = null
+
+            if (currentLocation != null) {
+                lon = currentLocation.longitude
+                lat = currentLocation.latitude
+            }
+//            val lat: Double? = if (currentLocation.latitude == 0.0) null else currentLocation.latitude
 
             val response = ApiConfig.getApiServiceWithToken(token).uploadImage(
                 multipartBody,

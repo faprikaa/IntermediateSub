@@ -16,8 +16,8 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
 
     lateinit var userModel: LiveData<UserModel>
 
-    private val _stories = MutableLiveData<StoryResponse>()
-    val stories: LiveData<StoryResponse> = _stories
+    val _stories = MutableLiveData<StoryResponse>()
+    var stories: LiveData<StoryResponse> = _stories
     var story: LiveData<PagingData<ListStoryItem>>? = null
     fun fetchStory() {
         viewModelScope.launch {

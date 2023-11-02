@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.a548bky4474.intermediatesub.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "outputFile": "D:\\GradleCache\\daemon\\8.0\\com.a548bky4474.intermediatesub.app-mergeDebugResources-2:\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\src\\main\\res\\values-night\\themes.xml",
@@ -71,6 +71,77 @@
                         "startOffsets": "890,965,1076,1165,1266,1373,1480,1579,1686,1789,1877,2001,2103,2205,2321,2423,2537,2665,2781,2903,3039,3159,3293,3413,3525,3740,3857,3981,4111,4233,4371,4505,4621",
                         "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
                         "endOffsets": "960,1071,1160,1261,1368,1475,1574,1681,1784,1872,1996,2098,2200,2316,2418,2532,2660,2776,2898,3034,3154,3288,3408,3520,3646,3852,3976,4106,4228,4366,4500,4616,4736"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.a548bky4474.intermediatesub.app-mergeDebugResources-2:/values-night-v8/values-night-v8.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "53",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "275"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "485",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "603"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\src\\main\\res\\values-night\\strings.xml",
+                    "from": {
+                        "startLines": "4,5,10,8,9,7,-1,-1,6",
+                        "startColumns": "4,4,4,4,4,4,-1,-1,4",
+                        "startOffsets": "139,182,433,329,380,274,-1,-1,231",
+                        "endColumns": "41,47,61,49,51,53,-1,-1,41",
+                        "endOffsets": "176,225,490,374,427,323,-1,-1,268"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,97,145,207,257,309,363,403,443",
+                        "endColumns": "41,47,61,49,51,53,39,39,41",
+                        "endOffsets": "92,140,202,252,304,358,398,438,480"
+                    }
+                },
+                {
+                    "source": "D:\\GradleCache\\caches\\transforms-3\\e8e82ebe359b8fbf9ac53ef44116a504\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "15,16,17,18,19,20,21,47",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "608,678,762,846,942,1044,1146,4001",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "673,757,841,937,1039,1141,1235,4085"
+                    }
+                },
+                {
+                    "source": "D:\\GradleCache\\caches\\transforms-3\\95a4fd3b0b9333c39067fb2dc54b32e0\\transformed\\material-1.9.0\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,48,49,50,51,52,53,54,55",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1240,1315,1426,1515,1616,1723,1830,1929,2036,2139,2227,2351,2453,2555,2671,2773,2887,3015,3131,3253,3389,3509,3643,3763,3875,4090,4207,4331,4461,4583,4721,4855,4971",
+                        "endColumns": "74,110,88,100,106,106,98,106,102,87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,116,123,129,121,137,133,115,119",
+                        "endOffsets": "1310,1421,1510,1611,1718,1825,1924,2031,2134,2222,2346,2448,2550,2666,2768,2882,3010,3126,3248,3384,3504,3638,3758,3870,3996,4202,4326,4456,4578,4716,4850,4966,5086"
                     }
                 }
             ]

@@ -45,14 +45,9 @@ class MainActivity : AppCompatActivity() {
             if (!user.isLogin) {
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
-            } else {
-                binding.pbMain.visibility = View.VISIBLE
-                setupView()
-                setupAction()
-                setupRecyclerView()
-                binding.pbMain.visibility = View.GONE
             }
         }
+        binding.pbMain.visibility = View.VISIBLE
 
         binding.fabAdd.setOnClickListener {
             var addIntent = Intent(this, AddActivity::class.java)
@@ -62,12 +57,17 @@ class MainActivity : AppCompatActivity() {
         if (!allPermissionsGranted()) {
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
+
+        setupView()
+        setupAction()
+        setupRecyclerView()
+        binding.pbMain.visibility = View.GONE
     }
 
-    override fun onResume() {
-        super.onResume()
-        setupRecyclerView()
-    }
+//    override fun onResume() {
+//        super.onResume()
+//        setupRecyclerView()
+//    }
 
     private val requestPermissionLauncher =
         registerForActivityResult(

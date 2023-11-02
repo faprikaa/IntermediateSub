@@ -14,7 +14,7 @@ class AddViewModel (private val storyRepository: StoryRepository): ViewModel() {
 
     private val _resultUpload = MutableLiveData<RegisterResponse>()
     val resultUpload: LiveData<RegisterResponse> = _resultUpload
-    fun uploadImage(file: File, currentLocation: Location, description: String) {
+    fun uploadImage(file: File, currentLocation: Location?, description: String) {
         viewModelScope.launch {
             storyRepository.getSession().collect {
                 _resultUpload.value = storyRepository.uploadImage(file, currentLocation, description, it.token)

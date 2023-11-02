@@ -3286,6 +3286,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id error_msg
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3467,12 +3468,14 @@ id pin
 id position
 id postLayout
 id pressed
+id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
 id ratio
 id rectangles
 id report_drawn
+id retry_button
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3630,6 +3633,7 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id useLoc
 id useLogo
 id vertical_only
 id view_offset_helper
@@ -3789,6 +3793,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_loading
 layout item_story
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
@@ -3883,6 +3888,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string add_new_story
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3899,6 +3905,7 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string camera
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3921,6 +3928,11 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string deskripsi
+string disini_deskripsi
+string disini_lat
+string disini_long
+string disini_waktu
 string email
 string error_a11y_label
 string error_icon_content_description
@@ -3936,8 +3948,10 @@ string image_fo_story
 string item_view_role_description
 string lat
 string latitude
+string latitude_full
 string login
 string logout
+string longitude_full
 string longtitude
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -4049,10 +4063,12 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string register
+string retry
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string send_current_location
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
@@ -4060,6 +4076,7 @@ string title_activity_maps
 string title_login_page
 string title_signup_page
 string title_welcome_page
+string upload
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
