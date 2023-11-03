@@ -4,7 +4,7 @@ import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.data.response.StoryResponse
 
 object DataDummy {
-    fun generateDummyStoryEntity():StoryResponse {
+    fun generateDummyStoryEntity(): List<ListStoryItem> {
         val storyList = ArrayList<ListStoryItem>()
         for (i in 0..10) {
 
@@ -19,11 +19,6 @@ object DataDummy {
             )
             storyList.add(story)
         }
-        var storyResponse = StoryResponse(
-            storyList,
-            false,
-            "Story fetched successfully"
-        )
-        return storyResponse
+        return storyList
     }
 }

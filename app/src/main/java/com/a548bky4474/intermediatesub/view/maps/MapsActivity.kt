@@ -61,20 +61,23 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     // Precise location access granted.
                     getMyLastLocation()
                 }
+
                 permissions[Manifest.permission.ACCESS_COARSE_LOCATION] ?: false -> {
                     // Only approximate location access granted.
                     getMyLastLocation()
                 }
+
                 else -> {
                     // No location access granted.
                     val locationManager = getSystemService(Context.LOCATION_SERVICE) as LocationManager
-                    if (!LocationManagerCompat.isLocationEnabled(locationManager)){
-                            startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
-                        }
+                    if (!LocationManagerCompat.isLocationEnabled(locationManager)) {
+                        startActivity(Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS))
+                    }
 
                 }
             }
         }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMapsBinding.inflate(layoutInflater)
@@ -100,7 +103,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
         createLocationRequest()
 
         viewModel.getStoriesWithLocation()
-        viewModel.stories.observe(this){
+        viewModel.stories.observe(this) {
             it.listStory.forEach { data ->
                 val latLng = data.lat?.let { data.lon?.let { it1 -> LatLng(it, it1) } }
                 mMap.addMarker(
@@ -109,7 +112,13 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                         .title(data.name)
                         .snippet(data.description)
                 )
-                boundsBuilder.include(latLng)
+            }
+            if (!mMap.isMyLocationEnabled) {
+                val indonesiaBounds = LatLngBounds(
+                    LatLng(-11.004814, 95.251746), // Koordinat sudut barat daya Indonesia
+                    LatLng(6.274168, 141.019454)  // Koordinat sudut timur laut Indonesia
+                )
+                mMap.animateCamera(CameraUpdateFactory.newLatLngBounds(indonesiaBounds, 5))
             }
         }
     }
@@ -138,15 +147,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                         "Location is not found. Try Again",
                         Toast.LENGTH_SHORT
                     ).show()
-                    val bounds: LatLngBounds = boundsBuilder.build()
-                    mMap.animateCamera(
-                        CameraUpdateFactory.newLatLngBounds(
-                            bounds,
-                            resources.displayMetrics.widthPixels,
-                            resources.displayMetrics.heightPixels,
-                            300
-                        )
-                    )
                 }
             }
         } else {
@@ -164,10 +164,10 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             val success =
                 mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(this, R.raw.map_style))
             if (!success) {
-                Log.e("kontol", "Style parsing failed.")
+                Log.e("error", "Style parsing failed.")
             }
         } catch (exception: Resources.NotFoundException) {
-            Log.e("kontol", "Can't find style. Error: ", exception)
+            Log.e("error", "Can't find style. Error: ", exception)
         }
     }
 
@@ -178,6 +178,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
             when (result.resultCode) {
                 RESULT_OK ->
                     Log.i("TAG", "onActivityResult: All location settings are satisfied.")
+
                 RESULT_CANCELED ->
                     Toast.makeText(
                         this@MapsActivity,
@@ -186,6 +187,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                     ).show()
             }
         }
+
     private fun createLocationRequest() {
         locationRequest = LocationRequest.create().apply {
             interval = TimeUnit.SECONDS.toMillis(1)

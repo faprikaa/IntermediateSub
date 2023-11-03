@@ -7,13 +7,14 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
 import androidx.paging.AsyncPagingDataDiffer
 import androidx.paging.PagingData
+import androidx.paging.PagingSource
+import androidx.paging.PagingState
 import androidx.recyclerview.widget.ListUpdateCallback
 import com.a548bky4474.intermediatesub.LiveDataTestUtil.getOrAwaitValue
 import org.junit.Assert
 import org.mockito.Mockito.`when`
 import org.mockito.junit.MockitoJUnitRunner
 import com.a548bky4474.intermediatesub.data.Result
-import com.a548bky4474.intermediatesub.data.paging.StoryPagingSource
 import com.a548bky4474.intermediatesub.data.pref.UserModel
 import com.a548bky4474.intermediatesub.data.response.ListStoryItem
 import com.a548bky4474.intermediatesub.data.response.StoryResponse
@@ -56,29 +57,23 @@ class MainViewModelTest {
     @Test
     fun `when Get Story Should Not Null and Return Not Null`() =
         runTest {
-            val expectedStories = MutableLiveData<StoryResponse> ()
-            expectedStories.value = dummyStories
-            `when`(storyRepository.getStoriesRepo("dummy-token")).thenReturn(dummyStories)
+            val expectedStory = MutableLiveData<PagingData<ListStoryItem>>()
+            expectedStory.value = StoryPagingSource.snapshot(dummyStories)
+            `when`(storyRepository.getStoriesPagingRepo("dummy-token")).thenReturn(expectedStory)
 
-            mainViewModel.getStories()
-            val actualStory = mainViewModel.stories
-            var actualSize = 0
-            var actualStoryFirstItem: ListStoryItem? = null
+            val actualStory: PagingData<ListStoryItem>? = mainViewModel.fetchStory()!!.getOrAwaitValue()
 
-            val observer = Observer<StoryResponse> { storyResponse ->
-                // The size of the response can be determined here
-                actualSize = storyResponse?.listStory?.size ?: 0
-                actualStoryFirstItem = storyResponse.listStory[0]
-            }
+            val differ = AsyncPagingDataDiffer(
+                diffCallback = StoryPagingAdapter.DIFF_CALLBACK,
+                updateCallback = noopListUpdateCallback,
+                workerDispatcher = Dispatchers.Main,
+            )
+            differ.submitData(actualStory!!)
 
-            actualStory.observeForever(observer)
-
-            Mockito.verify(storyRepository).getStoriesRepo("dummy-token")
+            Mockito.verify(storyRepository).getStoriesPagingRepo("dummy-token")
             Assert.assertNotNull(actualStory)
-            assertEquals(dummyStories.listStory.size, actualSize)
-            assertEquals(dummyStories.listStory[0], actualStoryFirstItem)
-
-            actualStory.removeObserver(observer)
+            assertEquals(dummyStories.size, differ.snapshot().size)
+            assertEquals(dummyStories[0], differ.snapshot()[0])
         }
 
     @Test
@@ -88,8 +83,8 @@ class MainViewModelTest {
         expectedStory.value = data
         `when`(storyRepository.getStoriesPagingRepo("dummy-token")).thenReturn(expectedStory)
         val mainViewModel = MainViewModel(storyRepository)
-        mainViewModel.fetchStory()
-        val actualStory: PagingData<ListStoryItem>? = mainViewModel.story?.getOrAwaitValue()
+
+        val actualStory: PagingData<ListStoryItem>? = mainViewModel.fetchStory()!!.getOrAwaitValue()
         val differ = AsyncPagingDataDiffer(
             diffCallback = StoryPagingAdapter.DIFF_CALLBACK,
             updateCallback = noopListUpdateCallback,
@@ -105,5 +100,21 @@ class MainViewModelTest {
         override fun onRemoved(position: Int, count: Int) {}
         override fun onMoved(fromPosition: Int, toPosition: Int) {}
         override fun onChanged(position: Int, count: Int, payload: Any?) {}
+    }
+}
+
+class StoryPagingSource : PagingSource<Int, LiveData<List<ListStoryItem>>>() {
+    companion object {
+        fun snapshot(items: List<ListStoryItem>): PagingData<ListStoryItem> {
+            return PagingData.from(items)
+        }
+    }
+
+    override fun getRefreshKey(state: PagingState<Int, LiveData<List<ListStoryItem>>>): Int {
+        return 0
+    }
+
+    override suspend fun load(params: LoadParams<Int>): LoadResult<Int, LiveData<List<ListStoryItem>>> {
+        return LoadResult.Page(emptyList(), 0, 1)
     }
 }

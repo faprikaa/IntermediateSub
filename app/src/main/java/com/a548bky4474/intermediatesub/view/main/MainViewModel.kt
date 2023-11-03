@@ -1,5 +1,6 @@
 package com.a548bky4474.intermediatesub.view.main
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -19,12 +20,14 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
     val _stories = MutableLiveData<StoryResponse>()
     var stories: LiveData<StoryResponse> = _stories
     var story: LiveData<PagingData<ListStoryItem>>? = null
-    fun fetchStory() {
+    fun fetchStory(): LiveData<PagingData<ListStoryItem>>? {
         viewModelScope.launch {
             repository.getSession().collect {
                 story = repository.getStoriesPagingRepo(it.token)
             }
-        }    }
+        }
+        return story
+    }
 
     fun getSession(): LiveData<UserModel> {
         userModel = repository.getSession().asLiveData()
@@ -44,11 +47,23 @@ class MainViewModel(private val repository: StoryRepository) : ViewModel() {
             }
         }
     }
+
     fun getStoriesWithLocation() {
         viewModelScope.launch {
             repository.getSession().collect {
                 _stories.value = repository.getStoriesWithLocationRepo(it.token)
             }
         }
+    }
+
+    private fun getToken(): String {
+        var token = ""
+        viewModelScope.launch {
+            repository.getSession().collect{ user ->
+                token = user.token
+            }
+        }
+        Log.i("ingfo2", token)
+        return token
     }
 }

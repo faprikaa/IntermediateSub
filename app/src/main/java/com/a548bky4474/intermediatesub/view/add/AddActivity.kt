@@ -3,6 +3,7 @@ package com.a548bky4474.intermediatesub.view.add
 import android.Manifest
 import android.content.Context
 import android.content.Intent
+import android.content.IntentSender
 import android.content.pm.PackageManager
 import android.location.Location
 import android.location.LocationManager
@@ -13,6 +14,7 @@ import android.util.Log
 import android.view.View
 import android.widget.CompoundButton
 import android.widget.Toast
+import androidx.activity.result.IntentSenderRequest
 import androidx.activity.result.PickVisualMediaRequest
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.viewModels
@@ -27,9 +29,13 @@ import com.a548bky4474.intermediatesub.view.getImageUri
 import com.a548bky4474.intermediatesub.view.main.MainActivity
 import com.a548bky4474.intermediatesub.view.reduceFileImage
 import com.a548bky4474.intermediatesub.view.uriToFile
+import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationServices
+import com.google.android.gms.location.LocationSettingsRequest
+import com.google.android.gms.location.SettingsClient
+import java.util.concurrent.TimeUnit
 
 class AddActivity : AppCompatActivity() {
     private var currentImageUri: Uri? = null
@@ -87,6 +93,7 @@ class AddActivity : AppCompatActivity() {
         binding.useLoc.setOnCheckedChangeListener { _: CompoundButton?, isChecked: Boolean ->
             if (isChecked) {
                 fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
+                createLocationRequest()
                 getMyLastLocation()
             } else {
                 binding.tvLatAdd.text = getString(R.string.latitude, null)
@@ -184,12 +191,6 @@ class AddActivity : AppCompatActivity() {
                     myLocation = location
                     binding.tvLatAdd.text = getString(R.string.latitude, myLocation?.latitude.toString().slice(1..7))
                     binding.tvLonAdd.text = getString(R.string.longtitude, myLocation?.longitude.toString().slice(1..7))
-                } else {
-                    Toast.makeText(this, "Gagal mendapatkan lokasi !", Toast.LENGTH_SHORT).show()
-                    binding.tvLatAdd.text = getString(R.string.latitude, null)
-                    binding.tvLonAdd.text = getString(R.string.longtitude, null)
-                    myLocation?.latitude = 0.0
-                    myLocation?.longitude = 0.0
                 }
             }
         } else {
@@ -200,6 +201,49 @@ class AddActivity : AppCompatActivity() {
                 )
             )
         }
+    }
+
+    private val resolutionLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.StartIntentSenderForResult()
+        ) { result ->
+            when (result.resultCode) {
+                RESULT_OK ->
+                    Log.i("TAG", "onActivityResult: All location settings are satisfied.")
+                RESULT_CANCELED ->
+                    Toast.makeText(
+                        this,
+                        "Anda harus mengaktifkan GPS untuk menggunakan aplikasi ini!",
+                        Toast.LENGTH_SHORT
+                    ).show()
+            }
+        }
+
+    private fun createLocationRequest() {
+        locationRequest = LocationRequest.create().apply {
+            interval = TimeUnit.SECONDS.toMillis(1)
+            maxWaitTime = TimeUnit.SECONDS.toMillis(1)
+            priority = LocationRequest.PRIORITY_HIGH_ACCURACY
+        }
+
+        val builder = LocationSettingsRequest.Builder()
+            .addLocationRequest(locationRequest)
+        val client: SettingsClient = LocationServices.getSettingsClient(this)
+        client.checkLocationSettings(builder.build())
+            .addOnSuccessListener {
+                getMyLastLocation()
+            }
+            .addOnFailureListener { exception ->
+                if (exception is ResolvableApiException) {
+                    try {
+                        resolutionLauncher.launch(
+                            IntentSenderRequest.Builder(exception.resolution).build()
+                        )
+                    } catch (sendEx: IntentSender.SendIntentException) {
+                        Toast.makeText(this, sendEx.message, Toast.LENGTH_SHORT).show()
+                    }
+                }
+            }
     }
 
 }
