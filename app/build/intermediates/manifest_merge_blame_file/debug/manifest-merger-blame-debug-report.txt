@@ -89,220 +89,221 @@
 51-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:23:9-54
 52        android:supportsRtl="true"
 52-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:24:9-35
-53        android:theme="@style/Theme.IntermediateSub" >
-53-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:25:9-53
-54
-55        <!--
-56             TODO: Before you run your application, you need a Google Maps API key.
-57
-58             To get one, follow the directions here:
-59
-60                https://developers.google.com/maps/documentation/android-sdk/get-api-key
-61
-62             Once you have your API key (it starts with "AIza"), define a new property in your
-63             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
-64             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
-65        -->
-66        <meta-data
-66-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:39:9-41:71
-67            android:name="com.google.android.geo.API_KEY"
-67-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:40:13-58
-68            android:value="AIzaSyDxGE4jJG3tlORTWlYRcNDGokalW9EJ2bk" />
-68-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:41:13-68
-69
-70        <activity
-70-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:9-46:59
-71            android:name="com.a548bky4474.intermediatesub.view.maps.MapsActivity"
-71-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-51
-72            android:exported="false"
-72-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:13-37
-73            android:label="@string/title_activity_maps" />
-73-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:46:13-56
-74        <activity
-74-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:47:9-49:40
-75            android:name="com.a548bky4474.intermediatesub.view.add.AddActivity"
-75-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:48:13-49
-76            android:exported="false" />
-76-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:49:13-37
-77        <activity
-77-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:50:9-52:40
-78            android:name="com.a548bky4474.intermediatesub.view.detail.DetailActivity"
-78-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:51:13-55
-79            android:exported="false" />
-79-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:52:13-37
-80        <activity
-80-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:53:9-55:48
-81            android:name="com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity"
-81-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:54:13-57
-82            android:exported="true" />
-82-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:55:13-36
-83        <activity
-83-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:56:9-58:40
-84            android:name="com.a548bky4474.intermediatesub.view.register.RegisterActivity"
-84-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:57:13-59
-85            android:exported="false" />
-85-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:58:13-37
-86        <activity
-86-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:59:9-61:39
-87            android:name="com.a548bky4474.intermediatesub.view.login.LoginActivity"
-87-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:60:13-53
-88            android:exported="true" />
-88-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:61:13-36
-89        <activity
-89-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:62:9-70:20
-90            android:name="com.a548bky4474.intermediatesub.view.main.MainActivity"
-90-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:63:13-51
-91            android:exported="true" >
-91-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:64:13-36
-92            <intent-filter>
-92-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:65:13-69:29
-93                <action android:name="android.intent.action.MAIN" />
-93-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:17-69
-93-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:25-66
-94
-95                <category android:name="android.intent.category.LAUNCHER" />
-95-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:17-77
-95-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:27-74
-96            </intent-filter>
-97        </activity>
-98
-99        <provider
-100            android:name="androidx.core.content.FileProvider"
-100-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:73:13-62
-101            android:authorities="com.a548bky4474.intermediatesub.fileprovider"
-101-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:74:13-64
-102            android:exported="false"
-102-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:75:13-37
-103            android:grantUriPermissions="true" >
-103-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:76:13-47
-104            <meta-data
-104-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:77:13-79:54
-105                android:name="android.support.FILE_PROVIDER_PATHS"
-105-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:78:17-67
-106                android:resource="@xml/file_paths" />
-106-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:79:17-51
-107        </provider>
-108
-109        <service
-109-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:82:9-94:19
-110            android:name="com.google.android.gms.metadata.ModuleDependencies"
-110-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:83:13-78
-111            android:enabled="false"
-111-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:84:13-36
-112            android:exported="false" >
-112-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:85:13-37
-113            <intent-filter>
-113-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:87:13-89:29
-114                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
-114-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:17-94
-114-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:25-91
-115            </intent-filter>
-116
-117            <meta-data
-117-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:91:13-93:36
-118                android:name="photopicker_activity:0:required"
-118-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:92:17-63
-119                android:value="" />
-119-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:93:17-33
-120        </service>
-121        <!-- Needs to be explicitly declared on P+ -->
-122        <uses-library
-122-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
-123            android:name="org.apache.http.legacy"
-123-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
-124            android:required="false" />
-124-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
-125
-126        <activity
-126-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-127            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-127-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-128            android:exported="false"
-128-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-129            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-129-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-130
-131        <meta-data
-131-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
-132            android:name="com.google.android.gms.version"
-132-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
-133            android:value="@integer/google_play_services_version" />
-133-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
-134
-135        <provider
-135-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-136            android:name="androidx.startup.InitializationProvider"
-136-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-137            android:authorities="com.a548bky4474.intermediatesub.androidx-startup"
-137-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-138            android:exported="false" >
-138-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-139            <meta-data
-139-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-140                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-140-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-141                android:value="androidx.startup" />
-141-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-142            <meta-data
-142-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
-143                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-143-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
-144                android:value="androidx.startup" />
-144-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
-145            <meta-data
-145-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
-146                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-146-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
-147                android:value="androidx.startup" />
-147-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
-148        </provider>
-149
-150        <service
-150-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
-151            android:name="androidx.room.MultiInstanceInvalidationService"
-151-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
-152            android:directBootAware="true"
-152-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
-153            android:exported="false" />
-153-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
-154
-155        <receiver
-155-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
-156            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-156-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
-157            android:directBootAware="false"
-157-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
-158            android:enabled="true"
-158-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
-159            android:exported="true"
-159-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
-160            android:permission="android.permission.DUMP" >
-160-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
-161            <intent-filter>
-161-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
-162                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
-162-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
-163            </intent-filter>
-164            <intent-filter>
-164-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
-165                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
-165-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
-166            </intent-filter>
-167            <intent-filter>
-167-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
-168                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-168-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
-168-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
-169            </intent-filter>
-170            <intent-filter>
-170-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
-171                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
-171-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
-172            </intent-filter>
-173        </receiver>
-174    </application>
-175
-176</manifest>
+53        android:testOnly="true"
+54        android:theme="@style/Theme.IntermediateSub" >
+54-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:25:9-53
+55
+56        <!--
+57             TODO: Before you run your application, you need a Google Maps API key.
+58
+59             To get one, follow the directions here:
+60
+61                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+62
+63             Once you have your API key (it starts with "AIza"), define a new property in your
+64             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+65             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+66        -->
+67        <meta-data
+67-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:39:9-41:71
+68            android:name="com.google.android.geo.API_KEY"
+68-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:40:13-58
+69            android:value="AIzaSyDxGE4jJG3tlORTWlYRcNDGokalW9EJ2bk" />
+69-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:41:13-68
+70
+71        <activity
+71-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:43:9-46:59
+72            android:name="com.a548bky4474.intermediatesub.view.maps.MapsActivity"
+72-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:44:13-51
+73            android:exported="false"
+73-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:45:13-37
+74            android:label="@string/title_activity_maps" />
+74-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:46:13-56
+75        <activity
+75-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:47:9-49:40
+76            android:name="com.a548bky4474.intermediatesub.view.add.AddActivity"
+76-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:48:13-49
+77            android:exported="false" />
+77-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:49:13-37
+78        <activity
+78-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:50:9-52:40
+79            android:name="com.a548bky4474.intermediatesub.view.detail.DetailActivity"
+79-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:51:13-55
+80            android:exported="false" />
+80-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:52:13-37
+81        <activity
+81-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:53:9-55:48
+82            android:name="com.a548bky4474.intermediatesub.view.welcome.WelcomeActivity"
+82-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:54:13-57
+83            android:exported="true" />
+83-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:55:13-36
+84        <activity
+84-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:56:9-58:40
+85            android:name="com.a548bky4474.intermediatesub.view.register.RegisterActivity"
+85-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:57:13-59
+86            android:exported="false" />
+86-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:58:13-37
+87        <activity
+87-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:59:9-61:39
+88            android:name="com.a548bky4474.intermediatesub.view.login.LoginActivity"
+88-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:60:13-53
+89            android:exported="true" />
+89-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:61:13-36
+90        <activity
+90-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:62:9-70:20
+91            android:name="com.a548bky4474.intermediatesub.view.main.MainActivity"
+91-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:63:13-51
+92            android:exported="true" >
+92-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:64:13-36
+93            <intent-filter>
+93-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:65:13-69:29
+94                <action android:name="android.intent.action.MAIN" />
+94-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:17-69
+94-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:66:25-66
+95
+96                <category android:name="android.intent.category.LAUNCHER" />
+96-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:17-77
+96-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:68:27-74
+97            </intent-filter>
+98        </activity>
+99
+100        <provider
+101            android:name="androidx.core.content.FileProvider"
+101-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:73:13-62
+102            android:authorities="com.a548bky4474.intermediatesub.fileprovider"
+102-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:74:13-64
+103            android:exported="false"
+103-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:75:13-37
+104            android:grantUriPermissions="true" >
+104-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:76:13-47
+105            <meta-data
+105-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:77:13-79:54
+106                android:name="android.support.FILE_PROVIDER_PATHS"
+106-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:78:17-67
+107                android:resource="@xml/file_paths" />
+107-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:79:17-51
+108        </provider>
+109
+110        <service
+110-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:82:9-94:19
+111            android:name="com.google.android.gms.metadata.ModuleDependencies"
+111-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:83:13-78
+112            android:enabled="false"
+112-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:84:13-36
+113            android:exported="false" >
+113-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:85:13-37
+114            <intent-filter>
+114-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:87:13-89:29
+115                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+115-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:17-94
+115-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:88:25-91
+116            </intent-filter>
+117
+118            <meta-data
+118-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:91:13-93:36
+119                android:name="photopicker_activity:0:required"
+119-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:92:17-63
+120                android:value="" />
+120-->C:\Users\Victus\Documents\kode\AndroidStudioProjects\IntermediateSub\app\src\main\AndroidManifest.xml:93:17-33
+121        </service>
+122        <!-- Needs to be explicitly declared on P+ -->
+123        <uses-library
+123-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+124            android:name="org.apache.http.legacy"
+124-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+125            android:required="false" />
+125-->[com.google.android.gms:play-services-maps:18.2.0] D:\GradleCache\caches\transforms-3\7b4503ec2e5b9030d927ef1eb542b17f\transformed\play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+126
+127        <activity
+127-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+128            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+128-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+129            android:exported="false"
+129-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+130            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+130-->[com.google.android.gms:play-services-base:18.0.1] D:\GradleCache\caches\transforms-3\6463d43adb8bbac6f42b373678954437\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+131
+132        <meta-data
+132-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+133            android:name="com.google.android.gms.version"
+133-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+134            android:value="@integer/google_play_services_version" />
+134-->[com.google.android.gms:play-services-basement:18.0.0] D:\GradleCache\caches\transforms-3\d090a36c36b9f707811efd9bb2ac60cc\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+135
+136        <provider
+136-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+137            android:name="androidx.startup.InitializationProvider"
+137-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+138            android:authorities="com.a548bky4474.intermediatesub.androidx-startup"
+138-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+139            android:exported="false" >
+139-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+140            <meta-data
+140-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+141                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+141-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+142                android:value="androidx.startup" />
+142-->[androidx.emoji2:emoji2:1.2.0] D:\GradleCache\caches\transforms-3\1389f324a0f60e7e6ff4a1d7ff19776c\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+143            <meta-data
+143-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+144                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+144-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+145                android:value="androidx.startup" />
+145-->[androidx.lifecycle:lifecycle-process:2.6.2] D:\GradleCache\caches\transforms-3\e4530362b58ab9999698327caf6a27ea\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+146            <meta-data
+146-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+147                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+147-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+148                android:value="androidx.startup" />
+148-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+149        </provider>
+150
+151        <service
+151-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:24:9-28:63
+152            android:name="androidx.room.MultiInstanceInvalidationService"
+152-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:25:13-74
+153            android:directBootAware="true"
+153-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:26:13-43
+154            android:exported="false" />
+154-->[androidx.room:room-runtime:2.5.2] D:\GradleCache\caches\transforms-3\b5ef41fdb5865498410612788a0dc64e\transformed\room-runtime-2.5.2\AndroidManifest.xml:27:13-37
+155
+156        <receiver
+156-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+157            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+157-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+158            android:directBootAware="false"
+158-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+159            android:enabled="true"
+159-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+160            android:exported="true"
+160-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+161            android:permission="android.permission.DUMP" >
+161-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+162            <intent-filter>
+162-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+163                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+163-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+164            </intent-filter>
+165            <intent-filter>
+165-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+166                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+166-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+167            </intent-filter>
+168            <intent-filter>
+168-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+169                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+169-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+169-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+170            </intent-filter>
+171            <intent-filter>
+171-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+172                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+172-->[androidx.profileinstaller:profileinstaller:1.3.0] D:\GradleCache\caches\transforms-3\006023d9e513fe123f61b7702fcfe0c5\transformed\profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+173            </intent-filter>
+174        </receiver>
+175    </application>
+176
+177</manifest>
