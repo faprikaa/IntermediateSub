@@ -47,11 +47,11 @@ class MainViewModelTest {
     private lateinit var storyRepository: StoryRepository
     private lateinit var mainViewModel: MainViewModel
     private val dummyStories = DataDummy.generateDummyStoryEntity()
+    private val TOKEN = "dummy-token"
 
     @Before
     fun setUp() {
         mainViewModel = MainViewModel(storyRepository)
-        `when`(storyRepository.getSession()).thenReturn(flowOf(UserModel("dummy_email@mail.com", "dummy-token", true)))
     }
 
     @Test
@@ -59,9 +59,9 @@ class MainViewModelTest {
         runTest {
             val expectedStory = MutableLiveData<PagingData<ListStoryItem>>()
             expectedStory.value = StoryPagingSource.snapshot(dummyStories)
-            `when`(storyRepository.getStoriesPagingRepo("dummy-token")).thenReturn(expectedStory)
+            `when`(storyRepository.getStoriesPagingRepo(TOKEN)).thenReturn(expectedStory)
 
-            val actualStory: PagingData<ListStoryItem>? = mainViewModel.fetchStory()!!.getOrAwaitValue()
+            val actualStory: PagingData<ListStoryItem>? = mainViewModel.fetchStory("dummy-token")!!.getOrAwaitValue()
 
             val differ = AsyncPagingDataDiffer(
                 diffCallback = StoryPagingAdapter.DIFF_CALLBACK,
@@ -70,8 +70,9 @@ class MainViewModelTest {
             )
             differ.submitData(actualStory!!)
 
-            Mockito.verify(storyRepository).getStoriesPagingRepo("dummy-token")
-            Assert.assertNotNull(actualStory)
+            Mockito.verify(storyRepository).getStoriesPagingRepo(TOKEN)
+
+            Assert.assertNotNull(differ.snapshot())
             assertEquals(dummyStories.size, differ.snapshot().size)
             assertEquals(dummyStories[0], differ.snapshot()[0])
         }
@@ -81,16 +82,16 @@ class MainViewModelTest {
         val data: PagingData<ListStoryItem> = PagingData.from(emptyList())
         val expectedStory = MutableLiveData<PagingData<ListStoryItem>>()
         expectedStory.value = data
-        `when`(storyRepository.getStoriesPagingRepo("dummy-token")).thenReturn(expectedStory)
-        val mainViewModel = MainViewModel(storyRepository)
+        `when`(storyRepository.getStoriesPagingRepo(TOKEN)).thenReturn(expectedStory)
 
-        val actualStory: PagingData<ListStoryItem>? = mainViewModel.fetchStory()!!.getOrAwaitValue()
+        val actualStory: PagingData<ListStoryItem> = mainViewModel.fetchStory(TOKEN)!!.getOrAwaitValue()
+
         val differ = AsyncPagingDataDiffer(
             diffCallback = StoryPagingAdapter.DIFF_CALLBACK,
             updateCallback = noopListUpdateCallback,
             workerDispatcher = Dispatchers.Main,
         )
-        differ.submitData(actualStory!!)
+        differ.submitData(actualStory)
 
         Assert.assertEquals(0, differ.snapshot().size)
     }

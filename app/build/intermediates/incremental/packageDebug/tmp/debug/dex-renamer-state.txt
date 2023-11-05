@@ -1,4 +1,4 @@
-#Fri Nov 03 12:51:08 WIB 2023
+#Fri Nov 03 19:38:31 WIB 2023
 base.0=C\:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\Victus\\Documents\\kode\\AndroidStudioProjects\\IntermediateSub\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex

@@ -89,9 +89,11 @@ class MainActivity : AppCompatActivity() {
                 adapter.retry()
             }
         )
-        viewModel.fetchStory()
-        viewModel.story?.observe(this) {
-            adapter.submitData(lifecycle, it)
+        viewModel.getSession().observe(this) { user ->
+            viewModel.fetchStory(user.token)?.observe(this) {
+                adapter.submitData(lifecycle, it)
+
+            }
         }
     }
 
